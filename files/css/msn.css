@@ -1,0 +1,214 @@
+.messenger { 
+	width: 350px; 
+	height: 70vh; 
+	padding: 3px; 
+	background-color: rgb(8, 49, 217); 
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px; 
+	position: absolute;
+	left: calc(50% - 350px / 2);
+	top: 15%;
+	min-height: 370px;
+	min-width: 291px;
+/*	-webkit-transform: translate(-50%, -60%);
+	-ms-transform: translate(-50%, -60%);
+	    transform: translate(-50%, -60%);*/
+}
+.messenger .top_bar {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	background: rgba(0, 0, 0, 0) -o-linear-gradient(rgb(0, 88, 238) 0%, rgb(53, 147, 255) 4%, rgb(40, 142, 255) 6%, rgb(18, 125, 255) 8%, rgb(3, 111, 252) 10%, rgb(2, 98, 238) 14%, rgb(0, 87, 229) 20%, rgb(0, 84, 227) 24%, rgb(0, 85, 235) 56%, rgb(0, 91, 245) 66%, rgb(2, 106, 254) 76%, rgb(0, 98, 239) 86%, rgb(0, 82, 214) 92%, rgb(0, 64, 171) 94%, rgb(0, 48, 146) 100%) repeat scroll 0% 0%;
+	background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, left bottom, from(rgb(0, 88, 238)), color-stop(4%, rgb(53, 147, 255)), color-stop(6%, rgb(40, 142, 255)), color-stop(8%, rgb(18, 125, 255)), color-stop(10%, rgb(3, 111, 252)), color-stop(14%, rgb(2, 98, 238)), color-stop(20%, rgb(0, 87, 229)), color-stop(24%, rgb(0, 84, 227)), color-stop(56%, rgb(0, 85, 235)), color-stop(66%, rgb(0, 91, 245)), color-stop(76%, rgb(2, 106, 254)), color-stop(86%, rgb(0, 98, 239)), color-stop(92%, rgb(0, 82, 214)), color-stop(94%, rgb(0, 64, 171)), to(rgb(0, 48, 146))) repeat scroll 0% 0%;
+	background: rgba(0, 0, 0, 0) linear-gradient(rgb(0, 88, 238) 0%, rgb(53, 147, 255) 4%, rgb(40, 142, 255) 6%, rgb(18, 125, 255) 8%, rgb(3, 111, 252) 10%, rgb(2, 98, 238) 14%, rgb(0, 87, 229) 20%, rgb(0, 84, 227) 24%, rgb(0, 85, 235) 56%, rgb(0, 91, 245) 66%, rgb(2, 106, 254) 76%, rgb(0, 98, 239) 86%, rgb(0, 82, 214) 92%, rgb(0, 64, 171) 94%, rgb(0, 48, 146) 100%) repeat scroll 0% 0%;
+	height: 30px;
+	position: absolute;
+	left: 2px;
+	top: 0px;
+	right: 2px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.messenger .top_bar img { margin: 0 4px; max-width: 18px; }
+.messenger .top_bar p { font-weight: bold; color: #fff; text-shadow: 1px 1px 3px #000; font-size: 13px; }
+.messenger .top_bar .controls {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	position: absolute;
+	top: 0;
+	right: 1px;
+	color: #fff;
+	height: 30px;
+}
+.messenger .top_bar .controls i {
+	-webkit-box-shadow: rgb(70, 70, 255) 0px -1px 2px 1px inset;
+	box-shadow: rgb(70, 70, 255) 0px -1px 2px 1px inset;
+	background: rgb(49, 101, 196);
+	background-image: -o-radial-gradient(90% 90%, circle, rgb(0, 84, 233) 0%, rgb(34, 99, 213) 55%, rgb(68, 121, 228) 70%, rgb(163, 187, 236) 90%, white 100%);
+	background-image: -o-radial-gradient(90% 90%, circle, rgb(0, 84, 233) 0%, rgb(34, 99, 213) 55%, rgb(68, 121, 228) 70%, rgb(163, 187, 236) 90%, white 100%);
+	background-image: radial-gradient(circle at 90% 90%, rgb(0, 84, 233) 0%, rgb(34, 99, 213) 55%, rgb(68, 121, 228) 70%, rgb(163, 187, 236) 90%, white 100%);
+	padding: 3px;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	margin: 0 2px;
+	width: 23px;
+	height: 23px;
+	text-align: center;
+}
+.messenger .top_bar .controls a { color: #fff; }
+.messenger .top_bar .controls a > i {
+	background: rgb(220, 101, 39);
+	-webkit-box-shadow: rgb(218, 70, 0) 0px -1px 2px 1px inset;
+	box-shadow: rgb(218, 70, 0) 0px -1px 2px 1px inset;
+	background-image: -o-radial-gradient(90% 90%, circle, rgb(204, 70, 0) 0%, rgb(220, 101, 39) 55%, rgb(205, 117, 70) 70%, rgb(255, 204, 178) 90%, white 100%);
+	background-image: radial-gradient(circle at 90% 90%, rgb(204, 70, 0) 0%, rgb(220, 101, 39) 55%, rgb(205, 117, 70) 70%, rgb(255, 204, 178) 90%, white 100%);
+}
+.messenger .menu_color {
+	background-color: #edead5;
+}
+.messenger .menu_bar {
+	position: absolute;
+	top: 30px;
+	left: 4px;
+	right: 4px;
+	border-bottom: 1px solid #fff;
+}
+.messenger .menu_bar div { padding: 5px 6px; border-right: 1px solid rgba(0, 0, 0, 0.15);  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+.messenger .menu_bar p { font-size: 12px; line-height: 1; }
+.messenger .menu_bar span { padding: 0 5px; }
+.messenger .menu_bar img { position: absolute; top: 0; right: 0; border-left: 1px solid white; border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+.messenger .messenger_user {
+	position: absolute;
+	top: 54px;
+	left: 4px;
+	right: 4px;
+	background: #fff;
+	font-size: 14px;
+	border-bottom: 1px solid #fff;
+}
+.messenger .messenger_user > .container-fluid {
+	border: 1px solid #94979e;
+	border-radius: 10px;
+	background: rgb(207,213,225);
+	background: -o-linear-gradient(bottom, rgba(207,213,225,1) 0%, rgba(207,219,235,1) 1%, rgba(249,247,248,1) 50%, rgba(202,217,240,1) 99%, rgba(247,255,255,1) 100%);
+	background: -webkit-gradient(linear, left bottom, left top, from(rgba(207,213,225,1)), color-stop(1%, rgba(207,219,235,1)), color-stop(50%, rgba(249,247,248,1)), color-stop(99%, rgba(202,217,240,1)), to(rgba(247,255,255,1)));
+	background: linear-gradient(0deg, rgba(207,213,225,1) 0%, rgba(207,219,235,1) 1%, rgba(249,247,248,1) 50%, rgba(202,217,240,1) 99%, rgba(247,255,255,1) 100%);
+	padding-bottom: 15px;
+}
+.messenger .messenger_user .col-md-3 i {
+	background: rgb(207,213,225);
+	background: -o-linear-gradient(bottom, rgba(207,213,225,1) 0%, rgba(207,219,235,1) 1%, rgba(249,247,248,1) 50%, rgba(202,217,240,1) 99%, rgba(247,255,255,1) 100%);
+	background: -webkit-gradient(linear, left bottom, left top, from(rgba(207,213,225,1)), color-stop(1%, rgba(207,219,235,1)), color-stop(50%, rgba(249,247,248,1)), color-stop(99%, rgba(202,217,240,1)), to(rgba(247,255,255,1)));
+	background: linear-gradient(0deg, rgba(207,213,225,1) 0%, rgba(207,219,235,1) 1%, rgba(249,247,248,1) 50%, rgba(202,217,240,1) 99%, rgba(247,255,255,1) 100%);
+	padding: 2px;
+	border: 1px solid #94979e;
+	border-radius: 10px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	position: relative;
+	left: -13px;
+	margin-bottom: 10px
+}
+.messenger .messenger_user .col-md-3 img {
+	border: 1px solid #606b71;
+	border-radius: 10px;
+	display: block;
+}
+.messenger .messenger_user .col-md-9 > span { font-weight: bold; color: #223168; line-height: 2.2; }
+.messenger .messenger_user .col-md-9 > p:first-of-type { font-weight: bold; }
+.messenger .messenger_user .col-md-9 > p:last-of-type { color: rgba(0,0,0,0.4); font-weight: 400; }
+.messenger .messenger_user .col-md-9 > p span { color: rgba(0,0,0,0.4); font-weight: 400; }
+
+.messenger .messenger_extra {
+	position: absolute;
+	top: 155px;
+	background: #fff;
+	left: 4px;
+	right: 4px;
+	padding: 1px 2px 0 2px;
+}
+.messenger .messenger_extra .col-md-12 { padding: 0; }
+.messenger .messenger_extra > .container-fluid {
+	background: rgb(249,247,248);
+	background: -o-linear-gradient(bottom, rgba(249,247,248,1) 50%, rgba(202,217,240,1) 99%, rgba(247,255,255,1) 100%);
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, rgba(249,247,248,1)), color-stop(99%, rgba(202,217,240,1)), to(rgba(247,255,255,1)));
+	background: linear-gradient(0deg, rgba(249,247,248,1) 50%, rgba(202,217,240,1) 99%, rgba(247,255,255,1) 100%);
+	border: 1px solid #94979e;
+	border-bottom: none;
+	border-radius: 10px;
+	border-bottom-right-radius: 0;
+	padding: 5px 20px;
+}
+.messenger .messenger_extra > .container-fluid::after {
+	content: "";
+	position: absolute;
+	left: 8px;
+	bottom: 0;
+	width: calc(25% - 7px);
+	height: 1px;
+	background: #94979e;
+	z-index: 1;
+}
+
+.messenger .messenger_content {
+	position: absolute;
+	top: 205px;
+	left: 4px;
+	right: 4px;
+	bottom: 4px;
+	background: #f9f7f8;
+}
+.messenger .messenger_content .container-fluid { height: 100%; }
+.messenger .messenger_content .row { padding: 0 2px; height: calc(100% - 2px); }
+.messenger_content .col-md-9 {
+	border: 1px solid #94979e;
+	border-top: 1px solid #dbdcde;
+	padding: 4px 7px;
+}
+.messenger_content .col-md-9 > img { position: absolute; bottom: 4px; max-width: calc(100% - 13px); }
+.messenger_content .col-md-9 > p { width: 100%; }
+.messenger_content .col-md-9 > p img { position: relative; top: -1px; }
+.messenger_content .col-md-9 > p a { text-decoration: none; color: #000; width: 100%; display: inline-block; border: 1px solid transparent; }
+.messenger_content .col-md-9 > p a:focus,
+.messenger_content .col-md-9 > p a:hover { background: #edf0f7; border: 1px solid #9197a3; }
+
+/**Responsive stuff**/
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+	.messenger .col-md-3 { -ms-flex: 0 0 25%; -webkit-box-flex: 0; flex: 0 0 25%; max-width: 25%; }
+	.messenger .col-md-9 { -ms-flex: 0 0 75%; -webkit-box-flex: 0; flex: 0 0 75%; max-width: 75%; }
+
+	.messenger {
+		left: 15%;
+		top: 15%;
+	}
+}
+
+@media (max-width: 420px) { 
+	.messenger {
+		position: static;
+		-webkit-transform: translate(0, 0);
+			-ms-transform: translate(0, 0);
+				transform: translate(0, 0);
+		height: 100%;
+		width: 100%;
+		min-width: inherit;
+	}
+
+}

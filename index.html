@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>MrbyscOS - Desktop</title>
+        <meta name="description" content="Mrbysco's Portfolio website">
+        <meta name="author" content="Mrbysco">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
+        </script>
+        <![endif]-->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        <script src="https://kit.fontawesome.com/81e725f0b7.js" crossorigin="anonymous"></script>
+
+        <script src="files/js/time.js"></script>
+        <script src="files/js/window.js"></script>
+        <script src="files/js/misc.js"></script>
+        <link rel="stylesheet" type="text/css" href="files/css/gui.css">
+        <link rel="stylesheet" type="text/css" href="files/css/ie.css">
+        <link rel="stylesheet" type="text/css" href="files/css/notepad.css">
+        <link rel="stylesheet" type="text/css" href="files/css/msn.css">
+    </head>
+    <body>
+        <section class="desktop">
+            <div class="container-fluid">
+                <div class="row main-row">
+                    <div class="col-md-12 desktop-icons">
+                        <div class="program" ondrop="drop(event)" ondragover="allowDrop(event)" id="trashcan">
+                            <img src="files/images/trash.png" alt="Trashcan icon" draggable="false" id="trash_icon">
+                            <p draggable="false">Recycle Bin</p>
+                        </div>
+                        <div class="computer program" ondragstart="dragStart(event)" draggable="true" id="draggable-1" ondblclick="playSound('./files/sound/error.ogg')">
+                            <img src="files/images/computer.png" alt="Computer icon" draggable="false">
+                            <p draggable="false">My Computer</p>
+                        </div>
+                        <div class="msn program" ondragstart="dragStart(event)" draggable="true" id="draggable-2" ondblclick="openFile2('#msn')">
+                            <img src="files/images/msn.png" alt="Notepad icon" draggable="false">
+                            <p draggable="false">MSN Messenger</p>
+                        </div>
+                        <div class="ie-html program" ondragstart="dragStart(event)" draggable="true" id="draggable-3" ondblclick="openFile('#ie')">
+                            <img src="files/images/IE.png" alt="Internet Explorer icon" draggable="false">
+                            <p draggable="false">Projects.html</p>
+                        </div>
+                        <div class="note-exe program" ondragstart="dragStart(event)" draggable="true" id="draggable-4" ondblclick="openFile2('#notepad')">
+                            <img src="files/images/notepad.png" alt="Notepad icon" draggable="false">
+                            <p draggable="false">About me.txt</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12" id="ie">
+                        <div class="ie_browser">
+                            <div class="ie_header">
+                                <div class="top_bar">
+                                    <img src="files/images/IE_icon.png" alt="IE icon"><p>Projects - <span>Microsoft</span> Internet Explorer</p>
+                                    <div class="controls"><i class="fas fa-minus"></i><i class="far fa-square"></i><a href="#"><i class="fas fa-times"></i></a></div>
+                                </div>
+                                <div class="menu_bar menu_color">
+                                    <div><p><span>File</span> <span>Edit</span> <span>View</span> <span>Favorites</span> <span>Tools</span> <span>Help</span></p></div>
+                                    <img src="files/images/ie_win.png" alt="IE Windows logo">
+                                </div>
+                                <div class="icon_bar menu_color">
+                                    <div class="left-icon"><img src="files/images/ie_left.png" alt="Left icon"><span>Back</span><i class="fas fa-sort-down"></i></div>
+                                    <div class="right-icon"><img src="files/images/ie_right.png" alt="Right icon"><i class="fas fa-sort-down"></i></div>
+                                    <div class="three-icons">
+                                        <img src="files/images/ie_stop.png" alt="Stop Loading icon">
+                                        <img src="files/images/ie_refresh.png" alt="Refresh icon">
+                                        <img src="files/images/ie_home.png" alt="Home Loading icon">
+                                    </div>
+                                    <div class="search-icon"><img src="files/images/ie_search.png" alt="Search icon" class="twenty-four"><span>Search</span></div>
+                                    <div class="fav-icon"><img src="files/images/ie_fav.png" alt="Favorite icon" class="twenty-four"><span>Favorites</span></div>
+                                    <div class="hist-icon"><img src="files/images/ie_history.png" alt="History icon"></div>
+                                    <div class="rest-icons mail-icon">
+                                        <img src="files/images/ie_mail.png" alt="Mail icon"><i class="fas fa-sort-down"></i>
+                                    </div>
+                                    <div class="rest-icons print-icon">
+                                        <img src="files/images/ie_print.png" alt="Print icon" class="twenty-four">
+                                    </div>
+                                    <div class="rest-icons note-icon">
+                                        <img src="files/images/ie_note.png" alt="Note icon">
+                                    </div>
+                                    <div class="rest-icons">
+                                        <a href="#msn"><img src="files/images/ie_msn.png" alt="Messenger icon" class="twenty-four"></a>
+                                    </div>
+                                </div>
+                                <div class="address_bar menu_color">
+                                    <div>
+                                        <span>Address</span>
+                                    </div>
+                                    <div class="text-field">
+                                        <img src="files/images/IE_icon.png" alt="IE icon"><p>https://www.mrbysco.dev/</p>
+                                        <img src="files/images/ie_more_links.png" alt="Expand URL icon" class="right">
+                                    </div>
+                                    <div class="go">
+                                        <img src="files/images/ie_go.png" alt="Go icon" class="right"><span>Go</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ie_content">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12 header">
+                                            <h2>Projects</h2>
+                                            <p>The projects I've worked on</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-4">
+                                            <p>Over the years I've worked on many projects. Most of them involve Minecraft Mods.</p>
+                                            <p>You can find them on my Github.</p>
+                                            <div class="github-card" data-github="Mrbysco" data-width="400" data-height="152" data-theme="default"></div>
+                                            <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+                                            <p>For build versions of my Minecraft forge you should head over to <a href="https://www.curseforge.com/members/Mrbysco/projects" target="_blank">CurseForge</a></p>
+                                        </div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ie_bottom menu_color">
+                                <div class="left"><img src="files/images/IE_icon.png" alt="IE icon"><span>Done</span></div>
+                                <div class="right"><img src="files/images/world_icon.png" alt="IE icon"><span>Internet</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notepad" id="notepad">
+                        <div class="notepad_header">
+                            <div class="top_bar" id="notepad-header">
+                                <img src="files/images/notepad_icon.png" alt="Notepad icon"><p>About Me - Notepad</p>
+                                <div class="controls"><i class="fas fa-minus"></i><i class="far fa-square"></i><a onclick="closeFile('#notepad')"><i class="fas fa-times"></i></a></div>
+                            </div>
+                            <div class="menu_bar menu_color">
+                                <div><p><span>File</span> <span>Edit</span> <span>Format</span> <span>View</span> <span>Help</span></p></div>
+                            </div>
+                        </div>
+                        <div class="notepad_content">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>Hi, I'm a hobbyist developer who is eager to learn. </p>
+                                        <p><br></p>
+                                        <p>So far I've mostly written Minecraft mods (Java). But I've also fiddled around with other ideas. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="messenger"id="msn">
+                        <div class="messenger_header">
+                            <div class="top_bar" id="msn-header">
+                                <img src="files/images/msn.png" alt="Messenger icon"><p>MSN Messenger</p>
+                                <div class="controls"><i class="fas fa-minus"></i><i class="far fa-square"></i><a onclick="closeFile('#msn')"><i class="fas fa-times"></i></a></div>
+                            </div>
+                            <div class="menu_bar menu_color">
+                                <div><p><span>File</span> <span>Contacts</span> <span>Tools</span> <span>Help</span></p></div>
+                            </div>
+                        </div>
+                        <div class="messenger_user">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <i class="fas fa-sort"></i><img src="files/images/msn_user.png" alt="Messenger user icon">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <span>Messenger</span>
+                                        <p>Mrbysco <span>(Online)</span> <i class="fas fa-sort-down"></i></p>
+                                        <p>&lt;Type a personal message&gt;</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="messenger_extra">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <img src="files/images/msn_single.png" alt="Messenger icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="messenger_content">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-9">
+                                        <p><a href="https://twitter.com/Mrbysco" target="_blank" title="Twitter"><img src="files/images/msn_icon.png" alt="Msn small user icon"> Twitter</a></p>
+                                        <p><a href="https://www.twitch.tv/mrbysco" target="_blank" title="Twitch"><img src="files/images/msn_icon.png" alt="Msn small user icon"> Twitch</a></p>
+                                        <p><a href="https://www.youtube.com/mrbysco" target="_blank" title="Youtube"><img src="files/images/msn_icon.png" alt="Msn small user icon"> Youtube</a></p>
+                                        <p><a href="https://soundcloud.com/mrbysco" target="_blank" title="Soundcloud"><img src="files/images/msn_icon.png" alt="Msn small user icon"> Soundcloud</a></p>
+
+                                        <img src="files/images/msn_ad.png" alt="Messenger ad">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <nav class="navbar fixed-bottom info-color">
+                <button class="navbar-toggler start" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="files/images/logo.png" alt="Start Logo"><span>start</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 taskbar-user"><img src="files/images/user_icon.png" alt="User icon"><p>Administrator</p></div>
+                            <div class="col-md-12 taskbar-nav">
+                                <div class="row">
+                                    <hr>
+                                    <div class="col-md-6 navigation">
+                                        <ul class="navbar-nav mr-auto">
+                                            <li class="nav-item">
+                                                <a class="nav-link waves-effect waves-light multi-line" href="#ie" title="Projects" onclick="playSound('./files/sound/start.ogg')"><img src="files/images/IE.png" alt="IE icon"><b>Internet</b><br>Internet Explorer</a>
+                                                <hr/>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link waves-effect waves-light" title="About me" onclick="openFile2('#notepad'))"><img src="files/images/notepad.png" alt="Notepad icon">Notepad</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link extra-padding waves-effect waves-light" href="https://soundcloud.com/mrbysco" target="_blank" title="Music" onclick="playSound('./files/sound/start.ogg')"><img src="files/images/media_player.png" alt="Media Player icon">Windows Media Player</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link waves-effect waves-light" title="Socials" onclick="openFile2('#msn')"><img src="files/images/msn.png" alt="Messenger icon" >MSN</a>
+                                            </li>
+                                            <li class="all-programs">
+                                                <hr/>
+                                                <p><b>All <u>P</u>rograms</b><img src="files/images/all_programs.png" alt="All programs icon"></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 navigation-2"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 taskbar-bottom">
+                                <div class="power-off"><a href="#"  onclick="playSound('./files/sound/shutdown.ogg')"><i class="fas fa-power-off"></i>T<u>u</u>rn Off Computer</a></div>
+                                <div class="log-off"><a href="#" onclick="playSound('./files/sound/logoff.ogg')"><i class="fas fa-key"></i><u>L</u>og Off</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="taskbar-side"><img src="files/images/sound_icon.png" alt="Sound icon"><p id="current-time"></p></div>
+            </nav>
+        </footer>
+    </body>
+</html>

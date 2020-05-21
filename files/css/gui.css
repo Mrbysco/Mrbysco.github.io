@@ -1,0 +1,276 @@
+html, body { font-family: 'Open Sans', sans-serif; font-size: 15px; }
+html {
+    height: 100vh;
+}
+body {
+	background-image: url("../images/wallpaper.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+p { line-height: 1.2; }
+
+/** Desktop styling **/
+body .desktop .main-row > .col-md-12 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 30px;
+	left: 0;
+}
+body .desktop #ie,
+body .desktop #notepad,
+body .desktop #msn { padding: 0; display: none; }
+body .desktop #ie:target,
+body .desktop #msn:target { display: block; overflow: hidden; background: rgba(0,0,0,0.1); }
+body .desktop .desktop-icons { padding: 20px; }
+body .desktop .program { color: #fff; text-align: center; max-width: 110px; text-shadow: 1px 1px 3px #000; font-size: 14px; margin-bottom: 20px; }
+body .desktop .program img { margin-bottom: 5px; max-width: 48px; }
+body .desktop p { margin-bottom: 0; max-width: 100%; overflow: visible; }
+
+/** Taskbar styling **/
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+    height: 30px;
+    background: rgb(49, 101, 196);
+    background: rgba(0, 0, 0, 0) -o-linear-gradient(rgb(31, 47, 134) 0px, rgb(49, 101, 196) 3%, rgb(54, 130, 229) 6%, rgb(68, 144, 230) 10%, rgb(56, 131, 229) 12%, rgb(43, 113, 224) 15%, rgb(38, 99, 218) 18%, rgb(35, 91, 214) 20%, rgb(34, 88, 213) 23%, rgb(33, 87, 214) 38%, rgb(36, 93, 219) 54%, rgb(37, 98, 223) 86%, rgb(36, 95, 220) 89%, rgb(33, 88, 212) 92%, rgb(29, 78, 192) 95%, rgb(25, 65, 165) 98%) repeat scroll 0% 0%;
+	background: rgba(0, 0, 0, 0) linear-gradient(rgb(31, 47, 134) 0px, rgb(49, 101, 196) 3%, rgb(54, 130, 229) 6%, rgb(68, 144, 230) 10%, rgb(56, 131, 229) 12%, rgb(43, 113, 224) 15%, rgb(38, 99, 218) 18%, rgb(35, 91, 214) 20%, rgb(34, 88, 213) 23%, rgb(33, 87, 214) 38%, rgb(36, 93, 219) 54%, rgb(37, 98, 223) 86%, rgb(36, 95, 220) 89%, rgb(33, 88, 212) 92%, rgb(29, 78, 192) 95%, rgb(25, 65, 165) 98%) repeat scroll 0% 0%;
+    width: 100vw;
+}
+footer p { margin-bottom: 0; }
+footer span { display: block; }
+footer .navbar { padding: 0; }
+footer .navbar .row { min-width: 540px; max-width: 540px; background-color: rgb(66, 130, 214); border-radius: 5px 5px 0; }
+footer .navbar .start {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+    position: absolute;
+	bottom: 0;
+	left: 0;
+    height: 30px;
+    padding: 5px 30px 5px 5px;
+    background: rgb(45,115,61);
+	background: -o-linear-gradient(bottom, rgba(45,115,61,1) 0%, rgba(55,139,56,1) 16%, rgba(70,175,70,1) 50%, rgba(60,156,61,1) 83%, rgba(139,190,139,1) 90%, rgba(55,128,51,1) 97%, rgba(48,70,3,1) 100%);
+	background: -webkit-gradient(linear, left bottom, left top, from(rgba(45,115,61,1)), color-stop(16%, rgba(55,139,56,1)), color-stop(50%, rgba(70,175,70,1)), color-stop(83%, rgba(60,156,61,1)), color-stop(90%, rgba(139,190,139,1)), color-stop(97%, rgba(55,128,51,1)), to(rgba(48,70,3,1)));
+	background: linear-gradient(0deg, rgba(45,115,61,1) 0%, rgba(55,139,56,1) 16%, rgba(70,175,70,1) 50%, rgba(60,156,61,1) 83%, rgba(139,190,139,1) 90%, rgba(55,128,51,1) 97%, rgba(48,70,3,1) 100%);
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+    text-shadow: 3px 2px 4px rgb(0, 0, 0, 0.5);
+    line-height: 1.2;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0 4px 12px 0;
+    border-right: 1px solid #1a871a;
+}
+footer .navbar .start:focus,
+footer .navbar .start:hover {
+	background: rgb(37,99,48);
+	background: -o-linear-gradient(bottom, rgba(37,99,48,1) 0%, rgba(55,130,54,1) 16%, rgba(58,147,58,1) 50%, rgba(52,133,52,1) 83%, rgba(120,162,120,1) 90%, rgba(54,126,56,1) 97%, rgba(36,75,21,1) 100%);
+	background: -webkit-gradient(linear, left bottom, left top, from(rgba(37,99,48,1)), color-stop(16%, rgba(55,130,54,1)), color-stop(50%, rgba(58,147,58,1)), color-stop(83%, rgba(52,133,52,1)), color-stop(90%, rgba(120,162,120,1)), color-stop(97%, rgba(54,126,56,1)), to(rgba(36,75,21,1)));
+	background: linear-gradient(0deg, rgba(37,99,48,1) 0%, rgba(55,130,54,1) 16%, rgba(58,147,58,1) 50%, rgba(52,133,52,1) 83%, rgba(120,162,120,1) 90%, rgba(54,126,56,1) 97%, rgba(36,75,21,1) 100%);
+}
+footer .navbar .start img { max-width: 18px; margin: 0 5px 0 10px; position: relative; top: 1px; }
+footer .navbar #navbarSupportedContent { margin-bottom: 30px; }
+footer .navbar #navbarSupportedContent .col-md-6 { padding: 0; }
+footer .navbar #navbarSupportedContent .navigation { background: #fff; border-left: 1px solid #1755c6; min-height: 350px; }
+footer .navbar #navbarSupportedContent .navigation-2 { background: #d3e5fb; border-left: 1px solid #94bfea; border-right: 1px solid #3e8cef;}
+footer .navbar .taskbar-user {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	background: rgb(62,140,239);
+	background: rgba(0, 0, 0, 0) -o-linear-gradient(rgb(24, 104, 206) 0%, rgb(14, 96, 203) 12%, rgb(14, 96, 203) 20%, rgb(17, 100, 207) 32%, rgb(22, 103, 207) 33%, rgb(27, 108, 211) 47%, rgb(30, 112, 217) 54%, rgb(36, 118, 220) 60%, rgb(41, 122, 224) 65%, rgb(52, 130, 227) 77%, rgb(55, 134, 229) 79%, rgb(66, 142, 233) 90%, rgb(71, 145, 235) 100%) repeat scroll 0% 0%;
+	background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, left bottom, from(rgb(24, 104, 206)), color-stop(12%, rgb(14, 96, 203)), color-stop(20%, rgb(14, 96, 203)), color-stop(32%, rgb(17, 100, 207)), color-stop(33%, rgb(22, 103, 207)), color-stop(47%, rgb(27, 108, 211)), color-stop(54%, rgb(30, 112, 217)), color-stop(60%, rgb(36, 118, 220)), color-stop(65%, rgb(41, 122, 224)), color-stop(77%, rgb(52, 130, 227)), color-stop(79%, rgb(55, 134, 229)), color-stop(90%, rgb(66, 142, 233)), to(rgb(71, 145, 235))) repeat scroll 0% 0%;
+	background: rgba(0, 0, 0, 0) linear-gradient(rgb(24, 104, 206) 0%, rgb(14, 96, 203) 12%, rgb(14, 96, 203) 20%, rgb(17, 100, 207) 32%, rgb(22, 103, 207) 33%, rgb(27, 108, 211) 47%, rgb(30, 112, 217) 54%, rgb(36, 118, 220) 60%, rgb(41, 122, 224) 65%, rgb(52, 130, 227) 77%, rgb(55, 134, 229) 79%, rgb(66, 142, 233) 90%, rgb(71, 145, 235) 100%) repeat scroll 0% 0%;
+	padding: 8px 15px;
+	border-radius: 5px 5px 0 0;
+	color: #fff;
+	text-shadow: 1px 1px rgba(0,0,0,0.25);
+	max-height: 80px;
+	font-weight: bold;
+	position: relative;
+	font-size: 1.2rem;
+}
+footer .navbar .taskbar-user::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 1px;
+	left: 0px;
+	width: 100%;
+	height: 3px;
+	background: rgba(0, 0, 0, 0) -o-linear-gradient(left, transparent 0px, rgba(255, 255, 255, 0.3) 1%, rgba(255, 255, 255, 0.5) 2%, rgba(255, 255, 255, 0.5) 95%, rgba(255, 255, 255, 0.3) 98%, rgba(255, 255, 255, 0.2) 99%, transparent 100%) repeat scroll 0% 0%;
+	background: rgba(0, 0, 0, 0) linear-gradient(to right, transparent 0px, rgba(255, 255, 255, 0.3) 1%, rgba(255, 255, 255, 0.5) 2%, rgba(255, 255, 255, 0.5) 95%, rgba(255, 255, 255, 0.3) 98%, rgba(255, 255, 255, 0.2) 99%, transparent 100%) repeat scroll 0% 0%;
+	-webkit-box-shadow: rgb(14, 96, 203) 0px -1px 1px inset;
+	        box-shadow: rgb(14, 96, 203) 0px -1px 1px inset;
+}
+footer .navbar .taskbar-user img {
+	border: 2px solid #ccd7eb;
+	border-radius: 4px;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	margin: 5px 10px 5px 0;
+	float: left;
+}
+footer .navbar .taskbar-nav { position: relative; }
+footer .navbar .taskbar-nav hr {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	display: block;
+	height: 2px;
+	background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(50%, rgb(218, 136, 74)), to(rgba(0, 0, 0, 0))) repeat scroll 0% 0%;
+	background: rgba(0, 0, 0, 0) -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgb(218, 136, 74) 50%, rgba(0, 0, 0, 0) 100%) repeat scroll 0% 0%;
+	background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(218, 136, 74) 50%, rgba(0, 0, 0, 0) 100%) repeat scroll 0% 0%;
+	border: 0px none;
+	z-index: 1;
+	margin: 0;
+}
+footer .navbar-nav { padding: 5px 13px; position: relative; height: 100%; }
+footer .navbar-nav .nav-link { color: #313139; width: 100%; line-height: 2; }
+footer .navbar-nav .nav-link.extra-padding { line-height: 1.9; }
+footer .navbar-nav .nav-link.multi-line { line-height: 1; color: #828383; }
+footer .navbar-nav .nav-link.multi-line b { color: #313139; }
+footer .navbar .taskbar-nav .navbar-nav hr {
+	position: static;
+	background: rgb(215,214,206);
+	background: -o-linear-gradient(left, rgba(215,214,206,0) 0%, rgba(215,214,206,0) 5%, rgba(215,214,206,1) 33%, rgba(215,214,206,1) 63%, rgba(215,214,206,0) 95%, rgba(215,214,206,0) 100%);
+	background: -webkit-gradient(linear, left top, right top, from(rgba(215,214,206,0)), color-stop(5%, rgba(215,214,206,0)), color-stop(33%, rgba(215,214,206,1)), color-stop(63%, rgba(215,214,206,1)), color-stop(95%, rgba(215,214,206,0)), to(rgba(215,214,206,0)));
+	background: linear-gradient(90deg, rgba(215,214,206,0) 0%, rgba(215,214,206,0) 5%, rgba(215,214,206,1) 33%, rgba(215,214,206,1) 63%, rgba(215,214,206,0) 95%, rgba(215,214,206,0) 100%);
+	margin: 5px 0;
+}
+footer .navbar-nav .nav-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	padding: 0 2px;
+	margin: 5px 0;
+}
+footer .navbar-nav .nav-item:first-of-type { margin-top: 0; }
+footer .navbar-nav .nav-item img {
+	float: left;
+	max-width: 32px;
+	margin-right: 6px;
+}
+footer .navbar-nav .nav-item:hover { background: #427cce; }
+footer .navbar-nav .nav-item:hover a,
+footer .navbar-nav .nav-item:hover a b { color: #fff !important; cursor: pointer; }
+footer .navbar-nav .all-programs {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+}
+footer .navbar-nav .all-programs p { max-width: 130px; margin: 0 auto; color: #49494a; padding-top: 10px; padding-bottom: 5px; }
+footer .navbar-nav .all-programs p img { margin-left: 10px; }
+footer .navbar .taskbar-bottom {
+	background: rgb(62,140,239);
+	background: rgba(0, 0, 0, 0) -o-linear-gradient(rgb(66, 130, 214) 0%, rgb(59, 133, 224) 3%, rgb(65, 138, 227) 5%, rgb(65, 138, 227) 17%, rgb(60, 135, 226) 21%, rgb(55, 134, 228) 26%, rgb(52, 130, 227) 29%, rgb(46, 126, 225) 39%, rgb(35, 116, 223) 49%, rgb(32, 114, 219) 57%, rgb(25, 110, 219) 62%, rgb(23, 107, 216) 72%, rgb(20, 104, 213) 75%, rgb(17, 101, 210) 83%, rgb(15, 97, 203) 88%) repeat scroll 0% 0%;
+	background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, left bottom, from(rgb(66, 130, 214)), color-stop(3%, rgb(59, 133, 224)), color-stop(5%, rgb(65, 138, 227)), color-stop(17%, rgb(65, 138, 227)), color-stop(21%, rgb(60, 135, 226)), color-stop(26%, rgb(55, 134, 228)), color-stop(29%, rgb(52, 130, 227)), color-stop(39%, rgb(46, 126, 225)), color-stop(49%, rgb(35, 116, 223)), color-stop(57%, rgb(32, 114, 219)), color-stop(62%, rgb(25, 110, 219)), color-stop(72%, rgb(23, 107, 216)), color-stop(75%, rgb(20, 104, 213)), color-stop(83%, rgb(17, 101, 210)), color-stop(88%, rgb(15, 97, 203))) repeat scroll 0% 0%;
+	background: rgba(0, 0, 0, 0) linear-gradient(rgb(66, 130, 214) 0%, rgb(59, 133, 224) 3%, rgb(65, 138, 227) 5%, rgb(65, 138, 227) 17%, rgb(60, 135, 226) 21%, rgb(55, 134, 228) 26%, rgb(52, 130, 227) 29%, rgb(46, 126, 225) 39%, rgb(35, 116, 223) 49%, rgb(32, 114, 219) 57%, rgb(25, 110, 219) 62%, rgb(23, 107, 216) 72%, rgb(20, 104, 213) 75%, rgb(17, 101, 210) 83%, rgb(15, 97, 203) 88%) repeat scroll 0% 0%;
+	max-height: 46px;
+	color: #fff;
+	font-size: 0.9rem;
+}
+footer .navbar .taskbar-bottom > div {
+	padding: 8px 5px;
+	float: right;
+}
+footer .navbar .taskbar-bottom a { color: #fff; }
+footer .navbar .taskbar-bottom i {
+	border: 2px solid #ccd7eb;
+	border-radius: 4px;
+	min-width: 30px;
+	min-height: 30px;
+	padding: 6px;
+	margin-right: 10px;
+}
+footer .navbar .taskbar-bottom .log-off i {
+	background: rgb(229,171,46);
+	background: -o-radial-gradient(circle, rgba(229,171,46,1) 0%, rgba(199,130,1,1) 100%);
+	background: radial-gradient(circle, rgba(229,171,46,1) 0%, rgba(199,130,1,1) 100%);
+}
+footer .navbar .taskbar-bottom .power-off { padding-left: 15px; }
+footer .navbar .taskbar-bottom .power-off i {
+	background: rgb(226,86,50);
+	background: -o-radial-gradient(circle, rgba(226,86,50,1) 0%, rgba(194,44,7,1) 100%);
+	background: radial-gradient(circle, rgba(226,86,50,1) 0%, rgba(194,44,7,1) 100%);
+}
+
+footer .navbar .taskbar-side {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 120px;
+	height: 30px;
+	background: rgba(0, 0, 0, 0) -o-linear-gradient(rgb(12, 89, 185) 1%, rgb(19, 158, 233) 6%, rgb(24, 181, 242) 10%, rgb(19, 155, 235) 14%, rgb(18, 144, 232) 19%, rgb(13, 141, 234) 63%, rgb(13, 159, 241) 81%, rgb(15, 158, 237) 88%, rgb(17, 155, 233) 91%, rgb(19, 146, 226) 94%, rgb(19, 126, 215) 97%, rgb(9, 91, 201) 100%) repeat scroll 0% 0%;
+	background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, left bottom, color-stop(1%, rgb(12, 89, 185)), color-stop(6%, rgb(19, 158, 233)), color-stop(10%, rgb(24, 181, 242)), color-stop(14%, rgb(19, 155, 235)), color-stop(19%, rgb(18, 144, 232)), color-stop(63%, rgb(13, 141, 234)), color-stop(81%, rgb(13, 159, 241)), color-stop(88%, rgb(15, 158, 237)), color-stop(91%, rgb(17, 155, 233)), color-stop(94%, rgb(19, 146, 226)), color-stop(97%, rgb(19, 126, 215)), to(rgb(9, 91, 201))) repeat scroll 0% 0%;
+	background: rgba(0, 0, 0, 0) linear-gradient(rgb(12, 89, 185) 1%, rgb(19, 158, 233) 6%, rgb(24, 181, 242) 10%, rgb(19, 155, 235) 14%, rgb(18, 144, 232) 19%, rgb(13, 141, 234) 63%, rgb(13, 159, 241) 81%, rgb(15, 158, 237) 88%, rgb(17, 155, 233) 91%, rgb(19, 146, 226) 94%, rgb(19, 126, 215) 97%, rgb(9, 91, 201) 100%) repeat scroll 0% 0%;
+	border-left: 1px solid rgb(16, 66, 175);
+	-webkit-box-shadow: rgb(24, 187, 255) 1px 0px 1px inset;
+	        box-shadow: rgb(24, 187, 255) 1px 0px 1px inset;
+	padding: 2px 10px 0;
+	margin-left: 10px;
+}
+
+footer .navbar .taskbar-side img { float: left; }
+footer .navbar .taskbar-side p { padding: 0 10px; color: #bfffff; font-size: 0.9rem; }
+
+/**Responsive stuff**/
+@media (max-width: 991px) { 
+	body .desktop .program img { margin-bottom: 5px; max-width: 36px; }
+}
+
+@media (max-width: 767px) { 
+	footer .navbar .row { min-width: 400px; max-width: 400px; }
+	footer .navbar #navbarSupportedContent .navigation { max-width: 65%; }
+	footer .navbar #navbarSupportedContent .navigation-2 { max-width: 35%; }
+}
+
+@media (max-width: 575px) { 
+	footer .navbar .row { min-width: 320px; max-width: 320px; }
+	footer .navbar #navbarSupportedContent .navigation { max-width: 80%; }
+	footer .navbar #navbarSupportedContent .navigation-2 { max-width: 20%; }
+}
+
+@media (max-height: 420px) {
+	body .desktop .program img { margin-bottom: 5px; max-width: 36px; }
+	body .desktop .main-row > .col-md-12 { padding: 20px; }
+	body .desktop .program { display: inline-block; margin-right: 20px; }
+}

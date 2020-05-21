@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#notepad").resizable(),$("#notepad").draggable({start:function(){$("#notepad").css("z-index","2"),$("#msn").css("z-index","0")}}),$("#msn").resizable(),$("#msn").draggable({start:function(){$("#msn").css("z-index","2"),$("#notepad").css("z-index","0")}})});
