@@ -1,7 +1,6 @@
 /** IE **/
 .ie_browser { height: 100%; position: relative; }
-.ie_browser img { float: left; }
-.ie_browser .ie_header { font-size: 14px; }
+.ie_browser .internet-header { font-size: 14px; }
 .ie_browser .top_bar {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -51,7 +50,7 @@
 	text-align: center;
 }
 .ie_browser .top_bar .controls a { color: #fff; }
-.ie_browser .top_bar .controls a > i {
+.ie_browser .top_bar .controls a:last-of-type > i {
 	background: rgb(220, 101, 39);
 	-webkit-box-shadow: rgb(218, 70, 0) 0px -1px 2px 1px inset;
 	box-shadow: rgb(218, 70, 0) 0px -1px 2px 1px inset;
@@ -70,9 +69,21 @@
 .ie_browser .menu_bar span { padding: 0 5px; }
 .ie_browser .menu_bar img { position: absolute; top: 0; right: 0; border-left: 1px solid white; border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
-.ie_browser .icon_bar { min-height: 36px; font-size: 12px; padding: 2px 6px; border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+.ie_browser .icon_bar { 	
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	min-height: 36px; 
+	font-size: 12px; 
+	padding: 2px 6px; 
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+}
 .ie_browser .icon_bar > div {
-	float: left;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -135,7 +146,7 @@
 .ie_content { height: calc(100% - 136px); }
 
 .ie_browser .ie_bottom {
-	min-height: 24px;
+	height: 24px;
 	border-top: 1px solid transparent;
 	-webkit-box-shadow: rgba(50, 50, 50, 0.8) 0px 1px 3px inset;
 	        box-shadow: rgba(50, 50, 50, 0.8) 0px 1px 3px inset;
@@ -166,54 +177,47 @@
 }
 
 /** IE content **/
-.ie_content { text-align: center; background: #E0E2DB;}
+.ie_content { text-align: center; background: #E0E2DB; overflow: auto; }
 .ie_content .header { text-align: center; padding: 20px 0 30px; background: #889696; color: #f2f3f4 ; }
 .ie_content .header h2 { margin-bottom: 20px; }
-.ie_content .col-md-4 { padding: 20px 0; }
-.ie_content .col-md-4 p { margin: 10px; }
-.ie_content .col-md-4 a { color: #5F7470; }
-.ie_content .col-md-4 iframe {
+.ie_content .col-md-12.content { padding: 20px 0; }
+.ie_content .col-md-12.content p { margin: 10px; }
+.ie_content .col-md-12.content a { color: #5F7470; }
+.ie_content .col-md-12.content iframe {
 	height: 152px;
+	width: auto;
+}
+.ie_browser:not(.fullscreen) {
+	min-width: 320px;
+	min-height: 180px;
+	background-color: rgb(8, 49, 217);
+	position: absolute;
+	height: 50vh;
+	width: 60vw;
+	top: 25%;
+	left: 15%;
+	overflow: hidden;
+}
+.ie_browser:not(.fullscreen),
+.ie_browser:not(.fullscreen) .top_bar {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.ie_browser:not(.fullscreen) .menu_color { margin: 0 4px; }
+.ie_browser:not(.fullscreen) .ie_content { margin: 0 4px; height: 100%; }
+.ie_browser:not(.fullscreen) .ie_bottom { 
+	margin: 0 4px; 
+	padding-bottom: 4px; 
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0; 
+	border-bottom: 4px solid rgb(8, 49, 217);
 }
 
 /**Responsive stuff**/
-@media (max-width: 618px) { 
-	.ie_browser .icon_bar { min-height: 66px; }
-}
-
-@media (max-width: 583px) {
-	.ie_browser .note-icon { clear: left; }
-}
-@media (max-width: 545px) {
-	.ie_browser .note-icon { clear: none; }
-	.ie_browser .print-icon { clear: left; }
-}
-@media (max-width: 511px) {
-	.ie_browser .print-icon { clear: none; }
-	.ie_browser .mail-icon { clear: left; }
-}
-@media (max-width: 466px) {
-	.ie_browser .mail-icon { clear: none; }
-	.ie_browser .hist-icon { clear: left; }
-}
-@media (max-width: 427px) {
-	.ie_browser .hist-icon { clear: none; }
-	.ie_browser .fav-icon { clear: left; }
-}
-@media (max-width: 400px) {
-	.ie_content .col-md-4 iframe { width: 100%; }
-}
 @media (max-width: 349px) {
 	.ie_browser .top_bar p span { display: none; }
-}
-@media (max-width: 336px) {
-	.ie_browser .icon_bar { min-height: 98px; }
-	.ie_browser .fav-icon { clear: none; }
-	.ie_browser .search-icon { clear: left; }
-}
-@media (max-width: 335px) {
-	.ie_browser .print-icon { clear: none; }
-	.ie_browser .note-icon { clear: left; }
 }
 @media (max-width: 327px) {
 	.ie_browser .address_bar .text-field { width: calc(100% - 106px); } 

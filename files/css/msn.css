@@ -67,7 +67,7 @@
 	text-align: center;
 }
 .messenger .top_bar .controls a { color: #fff; }
-.messenger .top_bar .controls a > i {
+.messenger .top_bar .controls a:last-of-type > i {
 	background: rgb(220, 101, 39);
 	-webkit-box-shadow: rgb(218, 70, 0) 0px -1px 2px 1px inset;
 	box-shadow: rgb(218, 70, 0) 0px -1px 2px 1px inset;
@@ -185,6 +185,8 @@
 .messenger_content .col-md-9 > p a:focus,
 .messenger_content .col-md-9 > p a:hover { background: #edf0f7; border: 1px solid #9197a3; }
 
+.messenger.fullscreen,
+.messenger.fullscreen .top_bar { border-radius: 0; }
 /**Responsive stuff**/
 @media (max-width: 991px) {
 
