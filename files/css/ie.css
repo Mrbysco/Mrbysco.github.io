@@ -203,6 +203,7 @@
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
 }
+.ie_browser:not(.fullscreen) .top_bar { padding-left: 4px; }
 .ie_browser:not(.fullscreen) .menu_color { margin: 0 4px; }
 .ie_browser:not(.fullscreen) .ie_content { margin: 0 4px; height: 100%; }
 .ie_browser:not(.fullscreen) .ie_bottom { 
