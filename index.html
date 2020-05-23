@@ -24,7 +24,6 @@
 
         <script src="files/js/time.js"></script>
         <script src="files/js/window.js"></script>
-        <script src="files/js/misc.js"></script>
         <link rel="stylesheet" type="text/css" href="files/css/ie.css">
         <link rel="stylesheet" type="text/css" href="files/css/notepad.css">
         <link rel="stylesheet" type="text/css" href="files/css/msn.css">
@@ -43,24 +42,28 @@
                             <img src="files/images/computer.png" alt="Computer icon" draggable="false">
                             <p draggable="false">My Computer</p>
                         </div>
-                        <div class="msn program" ondragstart="dragStart(event)" draggable="true" id="draggable-2" ondblclick="openFile2('#msn')">
+                        <div class="msn program" ondragstart="dragStart(event)" draggable="true" id="draggable-2" ondblclick="toggleFile('#msn')">
                             <img src="files/images/msn.png" alt="Notepad icon" draggable="false">
                             <p draggable="false">MSN Messenger</p>
                         </div>
-                        <div class="ie-html program" ondragstart="dragStart(event)" draggable="true" id="draggable-3" ondblclick="openFile2('#internet')">
+                        <div class="ie-html program" ondragstart="dragStart(event)" draggable="true" id="draggable-3" ondblclick="toggleFile('#internet')">
                             <img src="files/images/IE.png" alt="Internet Explorer icon" draggable="false">
                             <p draggable="false">Projects.html</p>
                         </div>
-                        <div class="note-exe program" ondragstart="dragStart(event)" draggable="true" id="draggable-4" ondblclick="openFile2('#notepad')">
+                        <div class="note-exe program" ondragstart="dragStart(event)" draggable="true" id="draggable-4" ondblclick="toggleFile('#notepad')">
                             <img src="files/images/notepad.png" alt="Notepad icon" draggable="false">
                             <p draggable="false">About me.txt</p>
                         </div>
                     </div>
-                    <div class="ie_browser fullscreen" id="internet" onclick="focus('#internet')">
+                    <div class="ie_browser fullscreen" id="internet">
                         <div class="internet-header">
                             <div class="top_bar" id="internet-header">
                                 <img src="files/images/IE_icon.png" alt="IE icon"><p>Projects - <span>Microsoft</span> Internet Explorer</p>
-                                <div class="controls"><i class="fas fa-minus"></i><a onclick="toggleFullscreen('#internet')"><i class="far fa-square"></i></a><a onclick="closeFile('#internet')"><i class="fas fa-times"></i></a></div>
+                                <div class="controls">
+                                    <a><i class="fas fa-minus" id="internet-minimize"></i></a>
+                                    <a><i class="far fa-square" id="internet-fullscreen"></i></a>
+                                    <a><i class="fas fa-times" id="internet-close"></i></a>
+                                </div>
                             </div>
                             <div class="menu_bar menu_color">
                                 <div><p><span>File</span> <span>Edit</span> <span>View</span> <span>Favorites</span> <span>Tools</span> <span>Help</span></p></div>
@@ -133,7 +136,11 @@
                         <div class="notepad_header">
                             <div class="top_bar" id="notepad-header">
                                 <img src="files/images/notepad_icon.png" alt="Notepad icon"><p>About Me - Notepad</p>
-                                <div class="controls"><i class="fas fa-minus"></i><a onclick="toggleFullscreen('#notepad')"><i class="far fa-square"></i></a><a onclick="closeFile('#notepad')"><i class="fas fa-times"></i></a></div>
+                                <div class="controls">
+                                    <a><i class="fas fa-minus" id="notepad-minimize"></i></a>
+                                    <a><i class="far fa-square" id="notepad-fullscreen"></i></a>
+                                    <a><i class="fas fa-times" id="notepad-close"></i></a>
+                                </div>
                             </div>
                             <div class="menu_bar menu_color">
                                 <div><p><span>File</span> <span>Edit</span> <span>Format</span> <span>View</span> <span>Help</span></p></div>
@@ -155,7 +162,11 @@
                         <div class="messenger_header">
                             <div class="top_bar" id="msn-header">
                                 <img src="files/images/msn.png" alt="Messenger icon"><p>MSN Messenger</p>
-                                <div class="controls"><i class="fas fa-minus"></i><a onclick="toggleFullscreen('#msn')"><i class="far fa-square"></i></a><a onclick="closeFile('#msn')"><i class="fas fa-times"></i></a></div>
+                                <div class="controls">
+                                    <a><i class="fas fa-minus" id="msn-minimize"></i></a>
+                                    <a><i class="far fa-square" id="msn-fullscreen"></i></a>
+                                    <a><i class="fas fa-times" id="msn-close"></i></a>
+                                </div>
                             </div>
                             <div class="menu_bar menu_color">
                                 <div><p><span>File</span> <span>Contacts</span> <span>Tools</span> <span>Help</span></p></div>
@@ -218,17 +229,17 @@
                                     <div class="col-md-6 navigation">
                                         <ul class="navbar-nav mr-auto">
                                             <li class="nav-item">
-                                                <a class="nav-link multi-line" title="Projects" onclick="openFile2('#internet')"><img src="files/images/IE.png" alt="IE icon"><b>Internet</b><br>Internet Explorer</a>
+                                                <a class="nav-link multi-line" title="Projects" onclick="toggleFile('#internet')"><img src="files/images/IE.png" alt="IE icon"><b>Internet</b><br>Internet Explorer</a>
                                                 <hr/>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" title="About me" onclick="openFile2('#notepad')"><img src="files/images/notepad.png" alt="Notepad icon">Notepad</a>
+                                                <a class="nav-link" title="About me" onclick="toggleFile('#notepad')"><img src="files/images/notepad.png" alt="Notepad icon">Notepad</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link " href="https://soundcloud.com/mrbysco" target="_blank" title="Music" onclick="playSound('./files/sound/start.ogg')"><img src="files/images/media_player.png" alt="Media Player icon">Windows Media Player</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" title="Socials" onclick="openFile2('#msn')"><img src="files/images/msn.png" alt="Messenger icon" >MSN</a>
+                                                <a class="nav-link" title="Socials" onclick="toggleFile('#msn')"><img src="files/images/msn.png" alt="Messenger icon" >MSN</a>
                                             </li>
                                             <li class="all-programs">
                                                 <hr/>
@@ -244,6 +255,17 @@
                                 <div class="log-off"><a href="#" onclick="playSound('./files/sound/logoff.ogg')"><i class="fas fa-key"></i><u>L</u>og Off</a></div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="taskbar-shortcuts">
+                    <div id="internet-shortcut" onclick="focus('#internet')">
+                        <img src="files/images/IE_icon.png" alt="IE icon"><div>Internet Explorer</div>
+                    </div>
+                    <div id="notepad-shortcut" onclick="focus('#notepad')">
+                        <img src="files/images/notepad_icon.png" alt="Notepad icon"><div>Notepad</div>
+                    </div>
+                    <div id="msn-shortcut" onclick="focus('#msn')">
+                        <img src="files/images/msn.png" alt="Messenger icon"><div>Messenger</div>
                     </div>
                 </div>
                 <div class="taskbar-side"><img src="files/images/sound_icon.png" alt="Sound icon"><p id="current-time"></p></div>

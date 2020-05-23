@@ -28,6 +28,8 @@ body .desktop p { margin-bottom: 0; max-width: 100%; overflow: visible; }
 
 body .desktop .fullscreen { position: absolute !important; top: 0 !important; left: 0 !important; width: 100% !important; height: calc(100vh - 30px) !important; overflow: hidden;}
 
+.top_bar .controls a { cursor: pointer; }
+
 /** Taskbar styling **/
 footer {
 	position: fixed;
@@ -87,7 +89,7 @@ footer .navbar .start:hover {
 	background: linear-gradient(0deg, rgba(37,99,48,1) 0%, rgba(55,130,54,1) 16%, rgba(58,147,58,1) 50%, rgba(52,133,52,1) 83%, rgba(120,162,120,1) 90%, rgba(54,126,56,1) 97%, rgba(36,75,21,1) 100%);
 }
 footer .navbar .start img { max-width: 18px; margin: 0 5px 0 10px; position: relative; top: 1px; }
-footer .navbar #navbarSupportedContent { margin-bottom: 30px; }
+footer .navbar #navbarSupportedContent { margin-bottom: 10px; }
 footer .navbar #navbarSupportedContent .col-md-6 { padding: 0; }
 footer .navbar #navbarSupportedContent .navigation { background: #fff; border-left: 1px solid #1755c6; min-height: 350px; }
 footer .navbar #navbarSupportedContent .navigation-2 { background: #d3e5fb; border-left: 1px solid #94bfea; border-right: 1px solid #3e8cef;}
@@ -225,6 +227,49 @@ footer .navbar .taskbar-bottom .power-off i {
 	background: -o-radial-gradient(circle, rgba(226,86,50,1) 0%, rgba(194,44,7,1) 100%);
 	background: radial-gradient(circle, rgba(226,86,50,1) 0%, rgba(194,44,7,1) 100%);
 }
+
+footer .taskbar-shortcuts {
+	height: 18px;
+	padding-left: 110px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	position: relative;
+	top: -7px;
+	z-index: -1;
+	width: 100%;
+}
+footer .taskbar-shortcuts img { max-height: 15px; }
+footer .taskbar-shortcuts > div { 
+	height: 22px; 
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	border-radius: 2px;
+	padding: 0px 8px;
+	border-radius: 2px;
+	width: 150px;
+		background-color: rgb(60, 129, 243);
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) -1px 0px inset, rgba(255, 255, 255, 0.2) 1px 1px 1px inset;
+	        box-shadow: rgba(0, 0, 0, 0.3) -1px 0px inset, rgba(255, 255, 255, 0.2) 1px 1px 1px inset;
+	cursor: pointer;
+}
+footer .taskbar-shortcuts > div.focused {
+			background-color: rgb(30, 82, 183);
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1px 1px inset, rgba(0, 0, 0, 0.7) 1px 0px 1px inset;
+	        box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1px 1px inset, rgba(0, 0, 0, 0.7) 1px 0px 1px inset;
+}
+footer .taskbar-shortcuts > div > div { padding-left: 4px; color: #fff; overflow: hidden; font-size: 13px; }
 
 footer .navbar .taskbar-side {
 	display: -webkit-box;
