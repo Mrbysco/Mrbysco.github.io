@@ -204,10 +204,7 @@ footer .navbar .taskbar-bottom {
 	color: #fff;
 	font-size: 0.9rem;
 }
-footer .navbar .taskbar-bottom > div {
-	padding: 8px 5px;
-	float: right;
-}
+footer .navbar .taskbar-bottom > div { padding: 8px 5px; float: right; }
 footer .navbar .taskbar-bottom a { color: #fff; }
 footer .navbar .taskbar-bottom i {
 	border: 2px solid #ccd7eb;
