@@ -21,7 +21,7 @@ body .desktop .main-row > .col-md-12 {
 body .desktop #internet,
 body .desktop #notepad,
 body .desktop #msn { padding: 0; display: none; }
-body .desktop .desktop-icons { padding: 20px; }
+body .desktop .desktop-icons { padding: 20px 0; }
 body .desktop .program { color: #fff; text-align: center; max-width: 110px; text-shadow: 1px 1px 3px #000; font-size: 14px; margin-bottom: 20px; }
 body .desktop .program img { margin-bottom: 5px; max-width: 48px; }
 body .desktop p { margin-bottom: 0; max-width: 100%; overflow: visible; }
@@ -32,7 +32,7 @@ body .desktop .fullscreen { position: absolute !important; top: 0 !important; le
 
 /** Taskbar styling **/
 footer {
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 	left: 0;
 	display: -webkit-box;
@@ -48,10 +48,11 @@ footer {
     background: rgba(0, 0, 0, 0) -o-linear-gradient(rgb(31, 47, 134) 0px, rgb(49, 101, 196) 3%, rgb(54, 130, 229) 6%, rgb(68, 144, 230) 10%, rgb(56, 131, 229) 12%, rgb(43, 113, 224) 15%, rgb(38, 99, 218) 18%, rgb(35, 91, 214) 20%, rgb(34, 88, 213) 23%, rgb(33, 87, 214) 38%, rgb(36, 93, 219) 54%, rgb(37, 98, 223) 86%, rgb(36, 95, 220) 89%, rgb(33, 88, 212) 92%, rgb(29, 78, 192) 95%, rgb(25, 65, 165) 98%) repeat scroll 0% 0%;
 	background: rgba(0, 0, 0, 0) linear-gradient(rgb(31, 47, 134) 0px, rgb(49, 101, 196) 3%, rgb(54, 130, 229) 6%, rgb(68, 144, 230) 10%, rgb(56, 131, 229) 12%, rgb(43, 113, 224) 15%, rgb(38, 99, 218) 18%, rgb(35, 91, 214) 20%, rgb(34, 88, 213) 23%, rgb(33, 87, 214) 38%, rgb(36, 93, 219) 54%, rgb(37, 98, 223) 86%, rgb(36, 95, 220) 89%, rgb(33, 88, 212) 92%, rgb(29, 78, 192) 95%, rgb(25, 65, 165) 98%) repeat scroll 0% 0%;
     width: 100vw;
+    z-index: 2;
 }
 footer p { margin-bottom: 0; }
 footer span { display: block; }
-footer .navbar { padding: 0; }
+footer .navbar { padding: 0; position: absolute; }
 footer .navbar .row { min-width: 540px; max-width: 540px; background-color: rgb(66, 130, 214); border-radius: 5px 5px 0; }
 footer .navbar .start {
 	display: -webkit-box;
@@ -89,7 +90,7 @@ footer .navbar .start:hover {
 	background: linear-gradient(0deg, rgba(37,99,48,1) 0%, rgba(55,130,54,1) 16%, rgba(58,147,58,1) 50%, rgba(52,133,52,1) 83%, rgba(120,162,120,1) 90%, rgba(54,126,56,1) 97%, rgba(36,75,21,1) 100%);
 }
 footer .navbar .start img { max-width: 18px; margin: 0 5px 0 10px; position: relative; top: 1px; }
-footer .navbar #navbarSupportedContent { margin-bottom: 10px; }
+footer .navbar #navbarSupportedContent { margin-bottom: 29px; }
 footer .navbar #navbarSupportedContent .col-md-6 { padding: 0; }
 footer .navbar #navbarSupportedContent .navigation { background: #fff; border-left: 1px solid #1755c6; min-height: 350px; }
 footer .navbar #navbarSupportedContent .navigation-2 { background: #d3e5fb; border-left: 1px solid #94bfea; border-right: 1px solid #3e8cef;}
@@ -230,7 +231,6 @@ footer .navbar .taskbar-bottom .power-off i {
 
 footer .taskbar-shortcuts {
 	height: 18px;
-	padding-left: 110px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -239,13 +239,18 @@ footer .taskbar-shortcuts {
 	align-items: center;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	position: relative;
-	top: -7px;
-	z-index: -1;
-	width: 100%;
+	position: absolute;
+	left: 110px;
+	right: 70px;
+	bottom: 7px;
+	z-index: 0;
 }
+footer .taskbar-shortcuts #internet-shortcut,
+footer .taskbar-shortcuts #notepad-shortcut,
+footer .taskbar-shortcuts #msn-shortcut { display: none; }
+
 footer .taskbar-shortcuts img { max-height: 15px; }
-footer .taskbar-shortcuts > div { 
+footer .taskbar-shortcuts .shortcut { 
 	height: 22px; 
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -264,14 +269,19 @@ footer .taskbar-shortcuts > div {
 	        box-shadow: rgba(0, 0, 0, 0.3) -1px 0px inset, rgba(255, 255, 255, 0.2) 1px 1px 1px inset;
 	cursor: pointer;
 }
-footer .taskbar-shortcuts > div.focused {
+footer .taskbar-shortcuts .shortcut.focused {
 			background-color: rgb(30, 82, 183);
 	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1px 1px inset, rgba(0, 0, 0, 0.7) 1px 0px 1px inset;
 	        box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1px 1px inset, rgba(0, 0, 0, 0.7) 1px 0px 1px inset;
 }
-footer .taskbar-shortcuts > div > div { padding-left: 4px; color: #fff; overflow: hidden; font-size: 13px; }
+footer .taskbar-shortcuts .shortcut:hover { 
+			background-color: rgb(30, 82, 183);
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1px 1px inset, rgba(0, 0, 0, 0.7) 1px 0px 1px inset;
+	        box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1px 1px inset, rgba(0, 0, 0, 0.7) 1px 0px 1px inset;
+}
+footer .taskbar-shortcuts .shortcut span { display: inline; color: #fff; overflow: hidden; font-size: 13px; }
 
-footer .navbar .taskbar-side {
+footer .taskbar-side {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -307,6 +317,15 @@ footer .navbar .taskbar-side p { padding: 0 10px; color: #bfffff; font-size: 0.9
 	footer .navbar .row { min-width: 400px; max-width: 400px; }
 	footer .navbar #navbarSupportedContent .navigation { max-width: 65%; }
 	footer .navbar #navbarSupportedContent .navigation-2 { max-width: 35%; }
+	footer .taskbar-shortcuts .shortcut { width: 120px; padding: 0 6px; }
+	footer .taskbar-shortcuts .shortcut img { position: relative; top: -2px; }
+	footer .taskbar-shortcuts #internet-shortcut img { left: -2px; }
+	footer .taskbar-shortcuts #msn-shortcut img { left: -2px; }
+}
+
+@media (max-width: 600px) {
+	footer .taskbar-shortcuts .shortcut { width: 30px; padding: 0 10px; }
+	footer .taskbar-shortcuts .shortcut span { display: none; }
 }
 
 @media (max-width: 575px) { 

@@ -39,7 +39,6 @@ $( document ).ready(function () {
     $("#notepad-shortcut").click(function(){
         focus("#notepad");
     });
-    $("#notepad-shortcut").toggle();
 
     $("#msn").resizable();
     $("#msn").click(function(e){
@@ -57,9 +56,9 @@ $( document ).ready(function () {
     $("#msn-shortcut").click(function(){
         focus("#msn");
     });
-    $("#msn-shortcut").toggle();
 
     $("#internet").resizable();
+    $("#internet").resizable("disable");
     $("#internet").draggable("disable");
     $("#internet").click(function(e){
          var id = e.target.id;
@@ -76,7 +75,6 @@ $( document ).ready(function () {
     $("#internet-shortcut").click(function(){
         focus("#internet");
     });
-    $("#internet-shortcut").toggle();
 });
 
 function toggleFullscreen(str) {
@@ -155,11 +153,7 @@ function toggleFile(str) {
     var shortcut = str + "-shortcut";
     var shortcutVar = $(shortcut);
     shortcutVar.toggle();
-    shortcutVar.toggleClass("focused");
-    if(!str.is(":visible")) {
-        if(shortcutVar.hasClass("focused")){
-            shortcutVar.removeClass("focused");
-        }
-    }
+    focus(str);
+
     playSound("./files/sound/start.ogg");
 }

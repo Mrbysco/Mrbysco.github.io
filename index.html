@@ -33,179 +33,181 @@
         <section class="desktop">
             <div class="container-fluid">
                 <div class="row main-row">
-                    <div class="col-md-12 desktop-icons">
-                        <div class="program" ondrop="drop(event)" ondragover="allowDrop(event)" id="trashcan">
-                            <img src="files/images/trash.png" alt="Trashcan icon" draggable="false" id="trash_icon">
-                            <p draggable="false">Recycle Bin</p>
-                        </div>
-                        <div class="computer program" ondragstart="dragStart(event)" draggable="true" id="draggable-1" ondblclick="playSound('./files/sound/error.ogg')">
-                            <img src="files/images/computer.png" alt="Computer icon" draggable="false">
-                            <p draggable="false">My Computer</p>
-                        </div>
-                        <div class="msn program" ondragstart="dragStart(event)" draggable="true" id="draggable-2" ondblclick="toggleFile('#msn')">
-                            <img src="files/images/msn.png" alt="Notepad icon" draggable="false">
-                            <p draggable="false">MSN Messenger</p>
-                        </div>
-                        <div class="ie-html program" ondragstart="dragStart(event)" draggable="true" id="draggable-3" ondblclick="toggleFile('#internet')">
-                            <img src="files/images/IE.png" alt="Internet Explorer icon" draggable="false">
-                            <p draggable="false">Projects.html</p>
-                        </div>
-                        <div class="note-exe program" ondragstart="dragStart(event)" draggable="true" id="draggable-4" ondblclick="toggleFile('#notepad')">
-                            <img src="files/images/notepad.png" alt="Notepad icon" draggable="false">
-                            <p draggable="false">About me.txt</p>
-                        </div>
-                    </div>
-                    <div class="ie_browser fullscreen" id="internet">
-                        <div class="internet-header">
-                            <div class="top_bar" id="internet-header">
-                                <img src="files/images/IE_icon.png" alt="IE icon"><p>Projects - <span>Microsoft</span> Internet Explorer</p>
-                                <div class="controls">
-                                    <a><i class="fas fa-minus" id="internet-minimize"></i></a>
-                                    <a><i class="far fa-square" id="internet-fullscreen"></i></a>
-                                    <a><i class="fas fa-times" id="internet-close"></i></a>
-                                </div>
+                    <div class="col-md-12">
+                        <div class="desktop-icons">
+                            <div class="program" ondrop="drop(event)" ondragover="allowDrop(event)" id="trashcan">
+                                <img src="files/images/trash.png" alt="Trashcan icon" draggable="false" id="trash_icon">
+                                <p draggable="false">Recycle Bin</p>
                             </div>
-                            <div class="menu_bar menu_color">
-                                <div><p><span>File</span> <span>Edit</span> <span>View</span> <span>Favorites</span> <span>Tools</span> <span>Help</span></p></div>
-                                <img src="files/images/ie_win.png" alt="IE Windows logo">
+                            <div class="computer program" ondragstart="dragStart(event)" draggable="true" id="draggable-1" ondblclick="playSound('./files/sound/error.ogg')">
+                                <img src="files/images/computer.png" alt="Computer icon" draggable="false">
+                                <p draggable="false">My Computer</p>
                             </div>
-                            <div class="icon_bar menu_color">
-                                <div class="left-icon"><img src="files/images/ie_left.png" alt="Left icon"><span>Back</span><i class="fas fa-sort-down"></i></div>
-                                <div class="right-icon"><img src="files/images/ie_right.png" alt="Right icon"><i class="fas fa-sort-down"></i></div>
-                                <div class="three-icons">
-                                    <img src="files/images/ie_stop.png" alt="Stop Loading icon">
-                                    <img src="files/images/ie_refresh.png" alt="Refresh icon">
-                                    <img src="files/images/ie_home.png" alt="Home Loading icon">
-                                </div>
-                                <div class="search-icon"><img src="files/images/ie_search.png" alt="Search icon" class="twenty-four"><span>Search</span></div>
-                                <div class="fav-icon"><img src="files/images/ie_fav.png" alt="Favorite icon" class="twenty-four"><span>Favorites</span></div>
-                                <div class="hist-icon"><img src="files/images/ie_history.png" alt="History icon"></div>
-                                <div class="rest-icons mail-icon">
-                                    <img src="files/images/ie_mail.png" alt="Mail icon"><i class="fas fa-sort-down"></i>
-                                </div>
-                                <div class="rest-icons print-icon">
-                                    <img src="files/images/ie_print.png" alt="Print icon" class="twenty-four">
-                                </div>
-                                <div class="rest-icons note-icon">
-                                    <img src="files/images/ie_note.png" alt="Note icon">
-                                </div>
-                                <div class="rest-icons">
-                                    <a href="#msn"><img src="files/images/ie_msn.png" alt="Messenger icon" class="twenty-four"></a>
-                                </div>
+                            <div class="msn program" ondragstart="dragStart(event)" draggable="true" id="draggable-2" ondblclick="toggleFile('#msn')">
+                                <img src="files/images/msn.png" alt="Notepad icon" draggable="false">
+                                <p draggable="false">MSN Messenger</p>
                             </div>
-                            <div class="address_bar menu_color">
-                                <div>
-                                    <span>Address</span>
-                                </div>
-                                <div class="text-field">
-                                    <img src="files/images/IE_icon.png" alt="IE icon"><p>https://www.mrbysco.dev/</p>
-                                    <img src="files/images/ie_more_links.png" alt="Expand URL icon" class="right">
-                                </div>
-                                <div class="go">
-                                    <img src="files/images/ie_go.png" alt="Go icon" class="right"><span>Go</span>
-                                </div>
+                            <div class="ie-html program" ondragstart="dragStart(event)" draggable="true" id="draggable-3" ondblclick="toggleFile('#internet')">
+                                <img src="files/images/IE.png" alt="Internet Explorer icon" draggable="false">
+                                <p draggable="false">Projects.html</p>
+                            </div>
+                            <div class="note-exe program" ondragstart="dragStart(event)" draggable="true" id="draggable-4" ondblclick="toggleFile('#notepad')">
+                                <img src="files/images/notepad.png" alt="Notepad icon" draggable="false">
+                                <p draggable="false">About me.txt</p>
                             </div>
                         </div>
-                        <div class="ie_content">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-12 header">
-                                        <h2>Projects</h2>
-                                        <p>The projects I've worked on</p>
+                        <div class="ie_browser fullscreen" id="internet">
+                            <div class="internet-header">
+                                <div class="top_bar" id="internet-header">
+                                    <img src="files/images/IE_icon.png" alt="IE icon"><p>Projects - <span>Microsoft</span> Internet Explorer</p>
+                                    <div class="controls">
+                                        <a><i class="fas fa-minus" id="internet-minimize"></i></a>
+                                        <a><i class="far fa-square" id="internet-fullscreen"></i></a>
+                                        <a><i class="fas fa-times" id="internet-close"></i></a>
+                                    </div>
+                                </div>
+                                <div class="menu_bar menu_color">
+                                    <div><p><span>File</span> <span>Edit</span> <span>View</span> <span>Favorites</span> <span>Tools</span> <span>Help</span></p></div>
+                                    <img src="files/images/ie_win.png" alt="IE Windows logo">
+                                </div>
+                                <div class="icon_bar menu_color">
+                                    <div class="left-icon"><img src="files/images/ie_left.png" alt="Left icon"><span>Back</span><i class="fas fa-sort-down"></i></div>
+                                    <div class="right-icon"><img src="files/images/ie_right.png" alt="Right icon"><i class="fas fa-sort-down"></i></div>
+                                    <div class="three-icons">
+                                        <img src="files/images/ie_stop.png" alt="Stop Loading icon">
+                                        <img src="files/images/ie_refresh.png" alt="Refresh icon">
+                                        <img src="files/images/ie_home.png" alt="Home Loading icon">
+                                    </div>
+                                    <div class="search-icon"><img src="files/images/ie_search.png" alt="Search icon" class="twenty-four"><span>Search</span></div>
+                                    <div class="fav-icon"><img src="files/images/ie_fav.png" alt="Favorite icon" class="twenty-four"><span>Favorites</span></div>
+                                    <div class="hist-icon"><img src="files/images/ie_history.png" alt="History icon"></div>
+                                    <div class="rest-icons mail-icon">
+                                        <img src="files/images/ie_mail.png" alt="Mail icon"><i class="fas fa-sort-down"></i>
+                                    </div>
+                                    <div class="rest-icons print-icon">
+                                        <img src="files/images/ie_print.png" alt="Print icon" class="twenty-four">
+                                    </div>
+                                    <div class="rest-icons note-icon">
+                                        <img src="files/images/ie_note.png" alt="Note icon">
+                                    </div>
+                                    <div class="rest-icons">
+                                        <a href="#msn"><img src="files/images/ie_msn.png" alt="Messenger icon" class="twenty-four"></a>
+                                    </div>
+                                </div>
+                                <div class="address_bar menu_color">
+                                    <div>
+                                        <span>Address</span>
+                                    </div>
+                                    <div class="text-field">
+                                        <img src="files/images/IE_icon.png" alt="IE icon"><p>https://www.mrbysco.dev/</p>
+                                        <img src="files/images/ie_more_links.png" alt="Expand URL icon" class="right">
+                                    </div>
+                                    <div class="go">
+                                        <img src="files/images/ie_go.png" alt="Go icon" class="right"><span>Go</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-12 content">
-                                        <p>Over the years I've worked on many projects. Most of them involve Minecraft Mods.</p>
-                                        <p>You can find them on my Github.</p>
-                                        <div class="github-card" data-github="Mrbysco" data-width="400" data-height="152" data-theme="default"></div>
-                                        <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-                                        <p>For build versions of my Minecraft forge you should head over to <a href="https://www.curseforge.com/members/Mrbysco/projects" target="_blank">CurseForge</a></p>
+                            <div class="ie_content">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12 header">
+                                            <h2>Projects</h2>
+                                            <p>The projects I've worked on</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12 content">
+                                            <p>Over the years I've worked on many projects. Most of them involve Minecraft Mods.</p>
+                                            <p>You can find them on my Github.</p>
+                                            <div class="github-card" data-github="Mrbysco" data-width="400" data-height="152" data-theme="default"></div>
+                                            <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+                                            <p>For build versions of my Minecraft forge you should head over to <a href="https://www.curseforge.com/members/Mrbysco/projects" target="_blank">CurseForge</a></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="ie_bottom menu_color">
-                            <div class="left"><img src="files/images/IE_icon.png" alt="IE icon"><span>Done</span></div>
-                            <div class="right"><img src="files/images/world_icon.png" alt="IE icon"><span>Internet</span></div>
-                        </div>
-                    </div>
-                    <div class="notepad" id="notepad">
-                        <div class="notepad_header">
-                            <div class="top_bar" id="notepad-header">
-                                <img src="files/images/notepad_icon.png" alt="Notepad icon"><p>About Me - Notepad</p>
-                                <div class="controls">
-                                    <a><i class="fas fa-minus" id="notepad-minimize"></i></a>
-                                    <a><i class="far fa-square" id="notepad-fullscreen"></i></a>
-                                    <a><i class="fas fa-times" id="notepad-close"></i></a>
-                                </div>
-                            </div>
-                            <div class="menu_bar menu_color">
-                                <div><p><span>File</span> <span>Edit</span> <span>Format</span> <span>View</span> <span>Help</span></p></div>
+                            <div class="ie_bottom menu_color">
+                                <div class="left"><img src="files/images/IE_icon.png" alt="IE icon"><span>Done</span></div>
+                                <div class="right"><img src="files/images/world_icon.png" alt="IE icon"><span>Internet</span></div>
                             </div>
                         </div>
-                        <div class="notepad_content">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <p>Hi, I'm a hobbyist developer who is eager to learn. </p>
-                                        <p><br></p>
-                                        <p>So far I've mostly written Minecraft mods (Java). But I've also fiddled around with other ideas. </p>
+                        <div class="notepad" id="notepad">
+                            <div class="notepad_header">
+                                <div class="top_bar" id="notepad-header">
+                                    <img src="files/images/notepad_icon.png" alt="Notepad icon"><p>About Me - Notepad</p>
+                                    <div class="controls">
+                                        <a><i class="fas fa-minus" id="notepad-minimize"></i></a>
+                                        <a><i class="far fa-square" id="notepad-fullscreen"></i></a>
+                                        <a><i class="fas fa-times" id="notepad-close"></i></a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="messenger" id="msn">
-                        <div class="messenger_header">
-                            <div class="top_bar" id="msn-header">
-                                <img src="files/images/msn.png" alt="Messenger icon"><p>MSN Messenger</p>
-                                <div class="controls">
-                                    <a><i class="fas fa-minus" id="msn-minimize"></i></a>
-                                    <a><i class="far fa-square" id="msn-fullscreen"></i></a>
-                                    <a><i class="fas fa-times" id="msn-close"></i></a>
+                                <div class="menu_bar menu_color">
+                                    <div><p><span>File</span> <span>Edit</span> <span>Format</span> <span>View</span> <span>Help</span></p></div>
                                 </div>
                             </div>
-                            <div class="menu_bar menu_color">
-                                <div><p><span>File</span> <span>Contacts</span> <span>Tools</span> <span>Help</span></p></div>
-                            </div>
-                        </div>
-                        <div class="messenger_user">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <i class="fas fa-sort"></i><img src="files/images/msn_user.png" alt="Messenger user icon">
-                                    </div>
-                                    <div class="col-md-9">
-                                        <span>Messenger</span>
-                                        <p>Mrbysco <span>(Online)</span> <i class="fas fa-sort-down"></i></p>
-                                        <p>&lt;Type a personal message&gt;</p>
+                            <div class="notepad_content">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p>Hi, I'm a hobbyist developer who is eager to learn. </p>
+                                            <p><br></p>
+                                            <p>So far I've mostly written Minecraft mods (Java). But I've also fiddled around with other ideas. </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="messenger_extra">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <img src="files/images/msn_single.png" alt="Messenger icon">
+                        <div class="messenger" id="msn">
+                            <div class="messenger_header">
+                                <div class="top_bar" id="msn-header">
+                                    <img src="files/images/msn.png" alt="Messenger icon"><p>MSN Messenger</p>
+                                    <div class="controls">
+                                        <a><i class="fas fa-minus" id="msn-minimize"></i></a>
+                                        <a><i class="far fa-square" id="msn-fullscreen"></i></a>
+                                        <a><i class="fas fa-times" id="msn-close"></i></a>
+                                    </div>
+                                </div>
+                                <div class="menu_bar menu_color">
+                                    <div><p><span>File</span> <span>Contacts</span> <span>Tools</span> <span>Help</span></p></div>
+                                </div>
+                            </div>
+                            <div class="messenger_user">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <i class="fas fa-sort"></i><img src="files/images/msn_user.png" alt="Messenger user icon">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <span>Messenger</span>
+                                            <p>Mrbysco <span>(Online)</span> <i class="fas fa-sort-down"></i></p>
+                                            <p>&lt;Type a personal message&gt;</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="messenger_content">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-3"></div>
-                                    <div class="col-md-9">
-                                        <p><a href="https://twitter.com/Mrbysco" target="_blank" title="Twitter"><img src="files/images/msn_icon.png" alt="Msn small user icon"> Twitter</a></p>
-                                        <p><a href="https://www.twitch.tv/mrbysco" target="_blank" title="Twitch"><img src="files/images/msn_icon.png" alt="Msn small user icon"> Twitch</a></p>
-                                        <p><a href="https://www.youtube.com/mrbysco" target="_blank" title="Youtube"><img src="files/images/msn_icon.png" alt="Msn small user icon"> Youtube</a></p>
-                                        <p><a href="https://soundcloud.com/mrbysco" target="_blank" title="Soundcloud"><img src="files/images/msn_icon.png" alt="Msn small user icon"> Soundcloud</a></p>
+                            <div class="messenger_extra">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <img src="files/images/msn_single.png" alt="Messenger icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="messenger_content">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-3"></div>
+                                        <div class="col-md-9">
+                                            <p><a href="https://twitter.com/Mrbysco" target="_blank" title="Twitter"><img src="files/images/msn_icon.png" alt="Msn small user icon"> Twitter</a></p>
+                                            <p><a href="https://www.twitch.tv/mrbysco" target="_blank" title="Twitch"><img src="files/images/msn_icon.png" alt="Msn small user icon"> Twitch</a></p>
+                                            <p><a href="https://www.youtube.com/mrbysco" target="_blank" title="Youtube"><img src="files/images/msn_icon.png" alt="Msn small user icon"> Youtube</a></p>
+                                            <p><a href="https://soundcloud.com/mrbysco" target="_blank" title="Soundcloud"><img src="files/images/msn_icon.png" alt="Msn small user icon"> Soundcloud</a></p>
 
-                                        <img src="files/images/msn_ad.png" alt="Messenger ad">
+                                            <img src="files/images/msn_ad.png" alt="Messenger ad">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -258,14 +260,14 @@
                     </div>
                 </div>
                 <div class="taskbar-shortcuts">
-                    <div id="internet-shortcut" onclick="focus('#internet')">
-                        <img src="files/images/IE_icon.png" alt="IE icon"><div>Internet Explorer</div>
+                    <div class="shortcut" id="internet-shortcut" onclick="focus('#internet')">
+                        <div><img src="files/images/IE_icon.png" alt="IE icon"> <span>Internet Explorer</span></div>
                     </div>
-                    <div id="notepad-shortcut" onclick="focus('#notepad')">
-                        <img src="files/images/notepad_icon.png" alt="Notepad icon"><div>Notepad</div>
+                    <div class="shortcut" id="notepad-shortcut" onclick="focus('#notepad')">
+                        <div> <img src="files/images/notepad_icon.png" alt="Notepad icon"> <span>Notepad</span></div>
                     </div>
-                    <div id="msn-shortcut" onclick="focus('#msn')">
-                        <img src="files/images/msn.png" alt="Messenger icon"><div>Messenger</div>
+                    <div class="shortcut" id="msn-shortcut" onclick="focus('#msn')">
+                        <div> <img src="files/images/msn.png" alt="Messenger icon"> <span>Messenger</span></div>
                     </div>
                 </div>
                 <div class="taskbar-side"><img src="files/images/sound_icon.png" alt="Sound icon"><p id="current-time"></p></div>
