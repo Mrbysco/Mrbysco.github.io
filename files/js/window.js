@@ -31,7 +31,7 @@ $( document ).ready(function () {
         } else if(id === "notepad-fullscreen") {
             toggleFullscreen("#notepad");
         } else if(id === "notepad-close") {
-            toggleFile("#notepad");
+            closeFile("#notepad");
         } else {
             focus("#notepad");
         }
@@ -48,7 +48,7 @@ $( document ).ready(function () {
         } else if(id === "msn-fullscreen") {
             toggleFullscreen("#msn");
         } else if(id === "msn-close") {
-            toggleFile("#msn");
+            closeFile("#msn");
         } else {
             focus("#msn");
         }
@@ -67,7 +67,7 @@ $( document ).ready(function () {
          } else if(id === "internet-fullscreen") {
              toggleFullscreen("#internet");
          } else if(id === "internet-close") {
-             toggleFile("#internet");
+             closeFile("#internet");
          } else {
              focus("#internet");
          }
@@ -148,12 +148,24 @@ function minimize(str) {
     }
 }
 
-function toggleFile(str) {
+function openFile(str) {
     $(str).toggle();
     var shortcut = str + "-shortcut";
     var shortcutVar = $(shortcut);
     shortcutVar.toggle();
     focus(str);
+
+    playSound("./files/sound/start.ogg");
+}
+
+function closeFile(str) {
+    $(str).toggle();
+    var shortcut = str + "-shortcut";
+    var shortcutVar = $(shortcut);
+    if($(shortcut).hasClass("focused")) {
+        $(shortcut).removeClass("focused");
+    }
+    shortcutVar.toggle();
 
     playSound("./files/sound/start.ogg");
 }
