@@ -1,6 +1,33 @@
 var ids = ["#notepad", "#msn", "#internet"];
 
-$( document ).ready(function () {
+  $( function() {
+    $("#draggable-1").draggable({
+        revert: "invalid",
+        revertDuration: 0,
+        containment: "document",
+        cursor: "move"});
+    $("#draggable-2").draggable({
+        revert: "invalid",
+        revertDuration: 0,
+        containment: "document",
+        cursor: "move"});
+    $("#draggable-3").draggable({
+        revert: "invalid",
+        revertDuration: 0,
+        containment: "document",
+        cursor: "move"});
+    $("#draggable-4").draggable({
+        revert: "invalid",
+        revertDuration: 0,
+        containment: "document",
+        cursor: "move"});
+    $("#trashcan").droppable({
+        accept: "#desktop-icons > div:not(#trashcan)",
+        drop: function( event, ui ) {
+            drop( ui.draggable );
+			playSound("./files/sound/recycle.ogg");
+        }
+    });
     $("#internet").draggable({
         start: function () {
             focus("#internet");
@@ -61,21 +88,30 @@ $( document ).ready(function () {
     $("#internet").resizable("disable");
     $("#internet").draggable("disable");
     $("#internet").click(function(e){
-         var id = e.target.id;
-         if(id === "internet-minimize") {
-             minimize("#internet");
-         } else if(id === "internet-fullscreen") {
-             toggleFullscreen("#internet");
-         } else if(id === "internet-close") {
-             closeFile("#internet");
-         } else {
-             focus("#internet");
-         }
+        var id = e.target.id;
+        if(id === "internet-minimize") {
+            minimize("#internet");
+        } else if(id === "internet-fullscreen") {
+            toggleFullscreen("#internet");
+        } else if(id === "internet-close") {
+            closeFile("#internet");
+        } else {
+            focus("#internet");
+        }
     });
     $("#internet-shortcut").click(function(){
         focus("#internet");
     });
 });
+
+
+function drop(item) {
+    var icon = $("#" + item.attr('id'));
+    icon.hide();
+    $("#trash_icon").append(icon);
+    $("#trash_icon").attr("src", "files/images/trash_full.png");
+}
+
 
 function toggleFullscreen(str) {
     var window = $(str);
@@ -114,21 +150,6 @@ function unfocus(str) {
     }
 }
 
-function dragStart(e) {
-    e.dataTransfer.setData("text", e.target.id);
-}
-function allowDrop(e) {
-    e.preventDefault();
-}
-function drop(e) {
-    e.preventDefault();
-    var t = e.dataTransfer.getData("text");
-    document.getElementById("trash_icon").src = "files/images/trash_full.png";
-    var n = document.getElementById(t);
-    n.style.display = "none";
-    e.target.appendChild(n);
-    playSound("./files/sound/recycle.ogg");
-}
 function playSound(e) {
     var t = new Audio(e);
     t.type = "audio/ogg";
