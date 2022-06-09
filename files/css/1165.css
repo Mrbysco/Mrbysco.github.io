@@ -1,0 +1,23 @@
+html {
+	height:100%
+}
+body {
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	height:100%;
+	margin:0;
+	padding:16px;
+	box-sizing:border-box
+}
+
+#age {
+	font-size:3.5vw;
+	margin:0
+}
+
+#days {
+	font-size:2vw;
+	margin:0
+}
