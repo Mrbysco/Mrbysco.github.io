@@ -1,0 +1,679 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A list of point events">
+  <meta name="author" content="Mrbysco">
+
+  <title>Event List</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="files/zeus/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="files/zeus/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="files/zeus/favicon-16x16.png">
+  <link rel="manifest" href="files/zeus/site.webmanifest">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="files/css/zeus.css">
+</head>
+<body>
+  <main role="main" class="container">
+    <h1 class="mt-5">Event List</h1>
+    <p class="lead">There's a bunch of events that can be triggered</p>
+    <p>There's a bunch of event's that can be triggered into the game, <br>
+      To trigger one of the events you have to make sure you have enough points.<br>
+      You can check your points by typing '<strong>!points</strong>' in chat.<br><br>
+      If you have enough points you can type '<strong>!redeem eventName &#60;amount&#62;</strong>' in chat.<br>
+    Here's a list of different redeems you can trigger using <strong>ZEUS_B0T</strong>.</p>
+    <p>You can find the old Pastebin list <a href="https://pastebin.com/dPTZ058E">here</a></p>
+    <div class="accordion" id="eventAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Miscellaneous
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#eventAccordion">
+          <div class="accordion-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Points</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">50</th>
+                  <td>GiveHunger</td>
+                  <td>Give half a hunger bar</td>
+                </tr>
+                <tr>
+                  <th scope="row">50</th>
+                  <td>TakeHunger</td>
+                  <td>Take half a hunger bar (will always keep at least half a hunger bar left)</td>
+                </tr>
+                <tr>
+                  <th scope="row">75</th>
+                  <td>GiveAHeart</td>
+                  <td>Give half a heart</td>
+                </tr>
+                <tr>
+                  <th scope="row">75</th>
+                  <td>TakeAHeart</td>
+                  <td>Take half a heart (will always keep at least half a heart left)</td>
+                </tr>
+                <tr>
+                  <th scope="row">100</th>
+                  <td>Rubberband</td>
+                  <td>Teleport the player back in time</td>
+                </tr>
+                <tr>
+                  <th scope="row">100</th>
+                  <td>Tree</td>
+                  <td>Spawn a random tree</td>
+                </tr>
+                <tr>
+                  <th scope="row">150</th>
+                  <td>WeatherClear</td>
+                  <td>Set weather to clear</td>
+                </tr>
+                <tr>
+                  <th scope="row">250</th>
+                  <td>Fatigue</td>
+                  <td>Apply Mining Fatique effect</td>
+                </tr>
+                <tr>
+                  <th scope="row">250</th>
+                  <td>OwO</td>
+                  <td>Place beds</td>
+                </tr>
+                <tr>
+                  <th scope="row">250</th>
+                  <td>Levitation</td>
+                  <td>Apply Levitation (5s)</td>
+                </tr>
+                <tr>
+                  <th scope="row">250</th>
+                  <td>Resistance</td>
+                  <td>Apply Resistance (90s)</td>
+                </tr>
+                <tr>
+                  <th scope="row">250</th>
+                  <td>Resistance</td>
+                  <td>Apply Haste (90s)</td>
+                </tr>
+                <tr>
+                  <th scope="row">300</th>
+                  <td>TimeShift</td>
+                  <td>Shifts the time to the opposite</td>
+                </tr>
+                <tr>
+                  <th scope="row">400</th>
+                  <td>AnvilDrop</td>
+                  <td>Drop an anvil from above</td>
+                </tr>
+                <tr>
+                  <th scope="row">400</th>
+                  <td>DropArmor</td>
+                  <td>Drop the streamers armor with a pickup delay</td>
+                </tr>
+                <tr>
+                  <th scope="row">500</th>
+                  <td>Blindness</td>
+                  <td>I CANT SEE</td>
+                </tr>
+                <tr>
+                  <th scope="row">500</th>
+                  <td>DoubleItemDamage</td>
+                  <td>Double Item Damage for 2 minutes</td>
+                </tr>
+                <tr>
+                  <th scope="row">500</th>
+                  <td>FakeExplosion</td>
+                  <td>Fake explosion</td>
+                </tr>
+                <tr>
+                  <th scope="row">500</th>
+                  <td>SlownessFatigue</td>
+                  <td>Apply Slowness & Fatigue</td>
+                </tr>
+                <tr>
+                  <th scope="row">500</th>
+                  <td>AnimalRain</td>
+                  <td>Raining animals</td>
+                </tr>
+                <tr>
+                  <th scope="row">600</th>
+                  <td>Bedrock</td>
+                  <td>Experience rain</td>
+                </tr>
+                <tr>
+                  <th scope="row">600</th>
+                  <td>XPRain</td>
+                  <td>Spawns bedrock underneath streamer</td>
+                </tr>
+                <tr>
+                  <th scope="row">600</th>
+                  <td>SOLIS</td>
+                  <td>Speed day cycle</td>
+                </tr>
+                <tr>
+                  <th scope="row">750</th>
+                  <td>Clumsy</td>
+                  <td>Drop random item from inventory</td>
+                </tr>
+                <tr>
+                  <th scope="row">750</th>
+                  <td>Storm</td>
+                  <td>Smite + Stormy weather</td>
+                </tr>
+                <tr>
+                  <th scope="row">1000</th>
+                  <td>DropHand</td>
+                  <td>Drop item in hand</td>
+                </tr>
+                <tr>
+                  <th scope="row">1000</th>
+                  <td>ImStuck</td>
+                  <td>LITERALLY CAN'T MOVE</td>
+                </tr>
+                <tr>
+                  <th scope="row">1000</th>
+                  <td>RavagerHive</td>
+                  <td>Makes the next broken beehive summon a Ravager</td>
+                </tr>
+                <tr>
+                  <th scope="row">1000</th>
+                  <td>SlowAndBlind</td>
+                  <td>Apply Blindess and Slowness</td>
+                </tr>
+                <tr>
+                  <th scope="row">1200</th>
+                  <td>Arrows</td>
+                  <td>Arrow rain with random potion effects</td>
+                </tr>
+                <tr>
+                  <th scope="row">1500</th>
+                  <td>Badluck</td>
+                  <td>Deletes held item</td>
+                </tr>
+                <tr>
+                  <th scope="row">2000</th>
+                  <td>SpeedIncrease</td>
+                  <td>I'm fast as fuck boi</td>
+                </tr>
+                <tr>
+                  <th scope="row">2500</th>
+                  <td>Sandy</td>
+                  <td>So much sand</td>
+                </tr>
+                <tr>
+                  <th scope="row">2500</th>
+                  <td>PotionMaster</td>
+                  <td>Potion rain</td>
+                </tr>
+                <tr>
+                  <th scope="row">4500</th>
+                  <td>SanRandomTeleportdy</td>
+                  <td>Random teleport between currentPosition + 10k and currentPosition - 10k (this is super dangerous)</td>
+                </tr>
+                <tr>
+                  <th scope="row">5000</th>
+                  <td>KillHostile</td>
+                  <td>Kills all hostile mobs</td>
+                </tr>
+                <tr>
+                  <th scope="row">5000</th>
+                  <td>JumpScareTeleport</td>
+                  <td>Random teleport between currentPosition + 10k and currentPosition - 10k and plays the JumpScare (this is super dangerous)</td>
+                </tr>
+                <tr>
+                  <th scope="row">5000</th>
+                  <td>TridentRain</td>
+                  <td>Trident rain</td>
+                </tr>
+                <tr>
+                  <th scope="row">5500</th>
+                  <td>IncreaseJump</td>
+                  <td>Gives jump boost x1000</td>
+                </tr>
+                <tr>
+                  <th scope="row">5500</th>
+                  <td>KillAnimals</td>
+                  <td>Kills all animals around</td>
+                </tr>
+                <tr>
+                  <th scope="row">10000</th>
+                  <td>MobRain</td>
+                  <td>ITS RAINING MOBS!!</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Spawning items
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#eventAccordion">
+          <div class="accordion-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Points</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>RandomRose</td>
+                  <td>You're the next...</td>
+                </tr>
+                <tr>
+                  <th scope="row">25</th>
+                  <td>Steak</td>
+                  <td>Give a piece of steak</td>
+                </tr>
+                <tr>
+                  <th scope="row">25</th>
+                  <td>Egg</td>
+                  <td>Give egg + chicken sound</td>
+                </tr>
+                <tr>
+                  <th scope="row">50</th>
+                  <td>WaterBucket</td>
+                  <td>Give a Water Bucket</td>
+                </tr>
+                <tr>
+                  <th scope="row">250</th>
+                  <td>Starterkit</td>
+                  <td>10x obsidian + 5x steak + stone tools + 10x wood & 2 chests</td>
+                </tr>
+                <tr>
+                  <th scope="row">250</th>
+                  <td>Enderchest</td>
+                  <td>Give an Enderchest</td>
+                </tr>
+                <tr>
+                  <th scope="row">250</th>
+                  <td>Emerald</td>
+                  <td>Give emerald + text "Just buy a house"</td>
+                </tr>
+                <tr>
+                  <th scope="row">250</th>
+                  <td>Diamond</td>
+                  <td>Gives Diamond + Experience sound</td>
+                </tr>
+                <tr>
+                  <th scope="row">300</th>
+                  <td>IronTools</td>
+                  <td>Spawns in Iron tools + sword</td>
+                </tr>
+                <tr>
+                  <th scope="row">300</th>
+                  <td>Poop</td>
+                  <td>Funny poopy, hahahaha</td>
+                </tr>
+                <tr>
+                  <th scope="row">500</th>
+                  <td>GoldApple</td>
+                  <td>Give a golden apple</td>
+                </tr>
+                <tr>
+                  <th scope="row">500</th>
+                  <td>IronArmor</td>
+                  <td>Give a set of Iron Armor</td>
+                </tr>
+                <tr>
+                  <th scope="row">500</th>
+                  <td>RodOfMisFortune</td>
+                  <td>Give a Cursed loot fishing rod</td>
+                </tr>
+                <tr>
+                  <th scope="row">1000</th>
+                  <td>Fortitude</td>
+                  <td>Give 64x obsidian</td>
+                </tr>
+                <tr>
+                  <th scope="row">1250</th>
+                  <td>EnchantKit</td>
+                  <td>Give +30 levels, an Enchanting Table and Bookshelves</td>
+                </tr>
+                <tr>
+                  <th scope="row">1500</th>
+                  <td>HalloweenVision</td>
+                  <td>Cursed pumpkin on head</td>
+                </tr>
+                <tr>
+                  <th scope="row">1500</th>
+                  <td>Elytra</td>
+                  <td>Give an Elytra and some firework rockets</td>
+                </tr>
+                <tr>
+                  <th scope="row">2000</th>
+                  <td>DiamondTools</td>
+                  <td>Give a set of Diamond tools</td>
+                </tr>
+                <tr>
+                  <th scope="row">2000</th>
+                  <td>NotchApple</td>
+                  <td>Give a Notch apple (Enchanted Golden Apple)</td>
+                </tr>
+                <tr>
+                  <th scope="row">3000</th>
+                  <td>DiamondKit</td>
+                  <td>Give Diamond armor and a Sword Kit</td>
+                </tr>
+                <tr>
+                  <th scope="row">3500</th>
+                  <td>CursedKit</td>
+                  <td>Give a Cursed kit</td>
+                </tr>
+                <tr>
+                  <th scope="row">7000</th>
+                  <td>BeaconKit</td>
+                  <td>Give a Beacon and 64 Iron blocks</td>
+                </tr>
+                <tr>
+                  <th scope="row">7500</th>
+                  <td>GodKit</td>
+                  <td>Give a God kit (protection 5, sharpness 5 armor & sword)</td>
+                </tr>
+                <tr>
+                  <th scope="row">10000</th>
+                  <td>GodKit</td>
+                  <td>Give a Netherrite armor (same enchants as GodKit) + God bow</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Summoning entities
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#eventAccordion">
+          <div class="accordion-body">
+              <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Points</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">100</th>
+                  <td>FakeLITTnt</td>
+                  <td>Summon a Fake Lit TNT</td>
+                </tr>
+                <tr>
+                  <th scope="row">100</th>
+                  <td>GIANT</td>
+                  <td>Spawn a harmless Giant</td>
+                </tr>
+                <tr>
+                  <th scope="row">100</th>
+                  <td>SpawnSpider</td>
+                  <td>Spawn a regular Spider</td>
+                </tr>
+                <tr>
+                  <th scope="row">100</th>
+                  <td>SpawnZombie</td>
+                  <td>Spawn a Zombie</td>
+                </tr>
+                <tr>
+                  <th scope="row">100</th>
+                  <td>Scammer</td>
+                  <td>Spawn a Wandering trader</td>
+                </tr>
+                <tr>
+                  <th scope="row">150</th>
+                  <td>SpawnSkeleton</td>
+                  <td>Spawn a Skeleton</td>
+                </tr>
+                <tr>
+                  <th scope="row">150</th>
+                  <td>SpawnWitch</td>
+                  <td>Spawn a Witch</td>
+                </tr>
+                <tr>
+                  <th scope="row">150</th>
+                  <td>SpawnAnimal</td>
+                  <td>Spawn a random animal</td>
+                </tr>
+                <tr>
+                  <th scope="row">250</th>
+                  <td>SpawnWitherSkeleton</td>
+                  <td>Spawn a Wither Skeleton</td>
+                </tr>
+                <tr>
+                  <th scope="row">300</th>
+                  <td>SpawnEnderman</td>
+                  <td>Spawn an Enderman</td>
+                </tr>
+                <tr>
+                  <th scope="row">350</th>
+                  <td>SpawnGhast</td>
+                  <td>Spawn a Ghast</td>
+                </tr>
+                <tr>
+                  <th scope="row">350</th>
+                  <td>SpawnShulker</td>
+                  <td>Spawn a Shulker</td>
+                </tr>
+                <tr>
+                  <th scope="row">400</th>
+                  <td>DragonFireball</td>
+                  <td>Spawn a Dragon Fireball</td>
+                </tr>
+                <tr>
+                  <th scope="row">400</th>
+                  <td>FlySkeleton</td>
+                  <td>Spawn a levitating Skeleton</td>
+                </tr>
+                <tr>
+                  <th scope="row">400</th>
+                  <td>SpawnCreeper</td>
+                  <td>Spawn a Creeper</td>
+                </tr>
+                <tr>
+                  <th scope="row">400</th>
+                  <td>SpawnCreeper</td>
+                  <td>Spawn a Creeper</td>
+                </tr>
+                <tr>
+                  <th scope="row">500</th>
+                  <td>LitTNT</td>
+                  <td>Spawn a Lit TNT</td>
+                </tr>
+                <tr>
+                  <th scope="row">500</th>
+                  <td>SpawnGolem</td>
+                  <td>Spawn an angry Iron Golem</td>
+                </tr>
+                <tr>
+                  <th scope="row">500</th>
+                  <td>SpawnGolem</td>
+                  <td>Spawn an angry Iron Golem</td>
+                </tr>
+                <tr>
+                  <th scope="row">600</th>
+                  <td>CreeperScare</td>
+                  <td>Creeper spawn behind the player</td>
+                </tr>
+                <tr>
+                  <th scope="row">600</th>
+                  <td>Rats</td>
+                  <td>10 silverfish</td>
+                </tr>
+                <tr>
+                  <th scope="row">700</th>
+                  <td>CreeperScare</td>
+                  <td>10 bees</td>
+                </tr>
+                <tr>
+                  <th scope="row">750</th>
+                  <td>iZombie</td>
+                  <td>Undying zombie</td>
+                </tr>
+                <tr>
+                  <th scope="row">1000</th>
+                  <td>PigHell</td>
+                  <td>Circle of pigs with 2 totems and each get struck by lightning</td>
+                </tr>
+                <tr>
+                  <th scope="row">1000</th>
+                  <td>Thor</td>
+                  <td>You feel like thor and threw lightning...</td>
+                </tr>
+                <tr>
+                  <th scope="row">1000</th>
+                  <td>SecretCreeper</td>
+                  <td>Invisible Creeper</td>
+                </tr>
+                <tr>
+                  <th scope="row">1200</th>
+                  <td>VEX</td>
+                  <td>OP VEX Creeper</td>
+                </tr>
+                <tr>
+                  <th scope="row">1500</th>
+                  <td>Meg</td>
+                  <td>Circle of witches named meg + laughing witch sounds for 10s + Text "MEEEeeeeEeEEEG"</td>
+                </tr>
+                <tr>
+                  <th scope="row">1500</th>
+                  <td>AquamanAttacks</td>
+                  <td>5 drowned spawn with tridents</td>
+                </tr>
+                <tr>
+                  <th scope="row">1500</th>
+                  <td>Awoo</td>
+                  <td>Angry dogs, jumpscare and night</td>
+                </tr>
+                <tr>
+                  <th scope="row">1500</th>
+                  <td>PiggyRocket</td>
+                  <td>Pig goes boom</td>
+                </tr>
+                <tr>
+                  <th scope="row">2000</th>
+                  <td>ThorCreeper</td>
+                  <td>You feel like thor and threw a lightning at 10x creepers...</td>
+                </tr>
+                <tr>
+                  <th scope="row">3000</th>
+                  <td>ThiccBacon</td>
+                  <td>Massive angry pig circle + hellish sounds + Text "THICC BACON"</td>
+                </tr>
+                <tr>
+                  <th scope="row">3500</th>
+                  <td>Slimey</td>
+                  <td>Spawn giant slime</td>
+                </tr>
+                <tr>
+                  <th scope="row">3500</th>
+                  <td>Nuke</td>
+                  <td>Falling Tnt on player with big explosion (disguised as LitTNT)</td>
+                </tr>
+                <tr>
+                  <th scope="row">5000</th>
+                  <td>Herobrine</td>
+                  <td>Herobrine</td>
+                </tr>
+                <tr>
+                  <th scope="row">7500</th>
+                  <td>WitherSpawn</td>
+                  <td>Spawns a Wither</td>
+                </tr>
+                <tr>
+                  <th scope="row">15000</th>
+                  <td>RavengerJail</td>
+                  <td>Circle of ravengers + Slowness 4(5s) + blindness(2s) + text "You're fucked"</td>
+                </tr>
+                <tr>
+                  <th scope="row">15000</th>
+                  <td>EnderDragon</td>
+                  <td>Spawns the Ender Dragon</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+            Sounds
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#eventAccordion">
+          <div class="accordion-body">
+              <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Points</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">100</th>
+                  <td>GhastScare</td>
+                  <td>Ghast sound scare</td>
+                </tr>
+                <tr>
+                  <th scope="row">100</th>
+                  <td>Fap</td>
+                  <td>Moisty slime sounds (10s)</td>
+                </tr>
+                <tr>
+                  <th scope="row">300</th>
+                  <td>FoxScare</td>
+                  <td>Fox screech</td>
+                </tr>
+                <tr>
+                  <th scope="row">500</th>
+                  <td>EndermanScare</td>
+                  <td>Enderman scare</td>
+                </tr>
+                <tr>
+                  <th scope="row">500</th>
+                  <td>JumpScare</td>
+                  <td>Guardian with a lot of random creepy sounds</td>
+                </tr>
+                <tr>
+                  <th scope="row">500</th>
+                  <td>AnnoyingSounds</td>
+                  <td>Play random sounds every 5s for 1 minute</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main> 
+</body>
+
+<footer class="footer">
+  <div class="container">
+    <span class="text-muted"><a href="https://twitch.tv/darrenzeus">Twitch.tv/DarrenZeus</a></span>
+  </div>
+</footer>
+</html>
