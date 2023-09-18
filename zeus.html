@@ -1,4 +1,5 @@
-<html>
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,8 +13,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="files/zeus/favicon-16x16.png">
   <link rel="manifest" href="files/zeus/site.webmanifest">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" type="text/css" href="files/css/zeus.css">
 </head>
@@ -21,8 +22,7 @@
   <main role="main" class="container">
     <h1 class="mt-5">Event List</h1>
     <p class="lead">There's a bunch of events that can be triggered</p>
-    <p>There's a bunch of event's that can be triggered into the game, <br>
-      To trigger one of the events you have to make sure you have enough points.<br>
+    <p>To trigger one of the events you have to make sure you have enough points.<br>
       You can check your points by typing '<strong>!points</strong>' in chat.<br><br>
       If you have enough points you can type '<strong>!redeem eventName &#60;amount&#62;</strong>' in chat.<br>
     Here's a list of different redeems you can trigger using <strong>ZEUS_B0T</strong>.<br></p>
@@ -49,22 +49,32 @@
                 <tr>
                   <th scope="row">50</th>
                   <td>GiveHunger</td>
-                  <td>Give half a hunger bar</td>
+                  <td>Give half a bar of hunger</td>
                 </tr>
                 <tr>
                   <th scope="row">50</th>
                   <td>TakeHunger</td>
-                  <td>Take half a hunger bar (will always keep at least half a hunger bar left)</td>
+                  <td>Take half a bar of hunger (will always keep at least half a hunger bar left)</td>
                 </tr>
                 <tr>
                   <th scope="row">75</th>
                   <td>GiveAHeart</td>
-                  <td>Give half a heart</td>
+                  <td>Give half a heart of health</td>
                 </tr>
                 <tr>
                   <th scope="row">75</th>
                   <td>TakeAHeart</td>
-                  <td>Take half a heart (will always keep at least half a heart left)</td>
+                  <td>Take half a heart of health (will always keep at least half a heart left)</td>
+                </tr>
+                <tr>
+                  <th scope="row">100</th>
+                  <td>GhastScare</td>
+                  <td>Ghast sound scare</td>
+                </tr>
+                <tr>
+                  <th scope="row">100</th>
+                  <td>Fap</td>
+                  <td>Play some fish plopping sounds for the next 10 seconds</td>
                 </tr>
                 <tr>
                   <th scope="row">100</th>
@@ -72,19 +82,9 @@
                   <td>Teleport the player back in time</td>
                 </tr>
                 <tr>
-                  <th scope="row">100</th>
-                  <td>Tree</td>
-                  <td>Spawn a random tree</td>
-                </tr>
-                <tr>
-                  <th scope="row">150</th>
-                  <td>WeatherClear</td>
-                  <td>Set weather to clear</td>
-                </tr>
-                <tr>
                   <th scope="row">250</th>
                   <td>Fatigue</td>
-                  <td>Apply Mining Fatique effect</td>
+                  <td>Apply Mining Fatique effect (20s)</td>
                 </tr>
                 <tr>
                   <th scope="row">250</th>
@@ -99,27 +99,32 @@
                 <tr>
                   <th scope="row">250</th>
                   <td>Resistance</td>
-                  <td>Apply Resistance (90s)</td>
-                </tr>
-                <tr>
-                  <th scope="row">250</th>
-                  <td>Resistance</td>
                   <td>Apply Haste (90s)</td>
                 </tr>
                 <tr>
                   <th scope="row">300</th>
-                  <td>TimeShift</td>
-                  <td>Shifts the time to the opposite</td>
-                </tr>
-                <tr>
-                  <th scope="row">400</th>
-                  <td>AnvilDrop</td>
-                  <td>Drop an anvil from above</td>
+                  <td>FoxScare</td>
+                  <td>Fox screech</td>
                 </tr>
                 <tr>
                   <th scope="row">400</th>
                   <td>DropArmor</td>
                   <td>Drop the streamers armor with a pickup delay</td>
+                </tr>
+                <tr>
+                  <th scope="row">500</th>
+                  <td>EndermanScare</td>
+                  <td>Enderman scare</td>
+                </tr>
+                <tr>
+                  <th scope="row">500</th>
+                  <td>JumpScare</td>
+                  <td>Guardian with a lot of random creepy sounds</td>
+                </tr>
+                <tr>
+                  <th scope="row">500</th>
+                  <td>AnnoyingSounds</td>
+                  <td>Play random sounds every 5s for 1 minute</td>
                 </tr>
                 <tr>
                   <th scope="row">500</th>
@@ -147,21 +152,6 @@
                   <td>Raining animals</td>
                 </tr>
                 <tr>
-                  <th scope="row">600</th>
-                  <td>XPRain</td>
-                  <td>Experience rain</td>
-                </tr>
-                <tr>
-                  <th scope="row">600</th>
-                  <td>Bedrock</td>
-                  <td>Spawns bedrock underneath streamer</td>
-                </tr>
-                <tr>
-                  <th scope="row">600</th>
-                  <td>SOLIS</td>
-                  <td>Speed day cycle</td>
-                </tr>
-                <tr>
                   <th scope="row">750</th>
                   <td>Clumsy</td>
                   <td>Drop random item from inventory</td>
@@ -169,7 +159,7 @@
                 <tr>
                   <th scope="row">750</th>
                   <td>Storm</td>
-                  <td>Smite + Stormy weather</td>
+                  <td>Make it storm and smite the player</td>
                 </tr>
                 <tr>
                   <th scope="row">1000</th>
@@ -178,23 +168,8 @@
                 </tr>
                 <tr>
                   <th scope="row">1000</th>
-                  <td>ImStuck</td>
-                  <td>LITERALLY CAN'T MOVE</td>
-                </tr>
-                <tr>
-                  <th scope="row">1000</th>
-                  <td>RavagerHive</td>
-                  <td>Makes the next broken beehive summon a Ravager</td>
-                </tr>
-                <tr>
-                  <th scope="row">1000</th>
                   <td>SlowAndBlind</td>
                   <td>Apply Blindess and Slowness</td>
-                </tr>
-                <tr>
-                  <th scope="row">1200</th>
-                  <td>Arrows</td>
-                  <td>Arrow rain with random potion effects</td>
                 </tr>
                 <tr>
                   <th scope="row">1500</th>
@@ -208,28 +183,13 @@
                 </tr>
                 <tr>
                   <th scope="row">2500</th>
-                  <td>Sandy</td>
-                  <td>So much sand</td>
-                </tr>
-                <tr>
-                  <th scope="row">2500</th>
                   <td>PotionMaster</td>
                   <td>Potion rain</td>
-                </tr>
-                <tr>
-                  <th scope="row">4500</th>
-                  <td>SanRandomTeleportdy</td>
-                  <td>Random teleport between currentPosition + 10k and currentPosition - 10k (this is super dangerous)</td>
                 </tr>
                 <tr>
                   <th scope="row">5000</th>
                   <td>KillHostile</td>
                   <td>Kills all hostile mobs</td>
-                </tr>
-                <tr>
-                  <th scope="row">5000</th>
-                  <td>JumpScareTeleport</td>
-                  <td>Random teleport between currentPosition + 10k and currentPosition - 10k and plays the JumpScare (this is super dangerous)</td>
                 </tr>
                 <tr>
                   <th scope="row">5000</th>
@@ -276,7 +236,7 @@
                 <tr>
                   <th scope="row">10</th>
                   <td>RandomRose</td>
-                  <td>You're the next...</td>
+                  <td>Give a Wither Rose saying 'You're next...'</td>
                 </tr>
                 <tr>
                   <th scope="row">25</th>
@@ -286,7 +246,7 @@
                 <tr>
                   <th scope="row">25</th>
                   <td>Egg</td>
-                  <td>Give egg + chicken sound</td>
+                  <td>Give an Egg and play a chicken sound</td>
                 </tr>
                 <tr>
                   <th scope="row">50</th>
@@ -296,7 +256,7 @@
                 <tr>
                   <th scope="row">250</th>
                   <td>Starterkit</td>
-                  <td>10x obsidian + 5x steak + stone tools + 10x wood & 2 chests</td>
+                  <td>Give 5 steak, stone tools,  10 wood, 2 chests</td>
                 </tr>
                 <tr>
                   <th scope="row">250</th>
@@ -306,27 +266,27 @@
                 <tr>
                   <th scope="row">250</th>
                   <td>Emerald</td>
-                  <td>Give emerald + text "Just buy a house"</td>
+                  <td>Give an emerald</td>
                 </tr>
                 <tr>
                   <th scope="row">250</th>
                   <td>Diamond</td>
-                  <td>Gives Diamond + Experience sound</td>
+                  <td>Give a Diamond</td>
                 </tr>
                 <tr>
                   <th scope="row">300</th>
                   <td>IronTools</td>
-                  <td>Spawns in Iron tools + sword</td>
+                  <td>Spawns in Iron tools + Sword</td>
                 </tr>
                 <tr>
                   <th scope="row">300</th>
                   <td>Poop</td>
-                  <td>Funny poopy, hahahaha</td>
+                  <td>Give some renamed brown wool and dye</td>
                 </tr>
                 <tr>
                   <th scope="row">500</th>
                   <td>GoldApple</td>
-                  <td>Give a golden apple</td>
+                  <td>Give a Golden Apple</td>
                 </tr>
                 <tr>
                   <th scope="row">500</th>
@@ -341,22 +301,22 @@
                 <tr>
                   <th scope="row">1000</th>
                   <td>Fortitude</td>
-                  <td>Give 64x obsidian</td>
+                  <td>Give 64 Obsidian</td>
                 </tr>
                 <tr>
                   <th scope="row">1250</th>
                   <td>EnchantKit</td>
-                  <td>Give +30 levels, an Enchanting Table and Bookshelves</td>
+                  <td>Give an Enchantment Table and some bookshelves + 30 levels of XP</td>
                 </tr>
                 <tr>
                   <th scope="row">1500</th>
                   <td>HalloweenVision</td>
-                  <td>Cursed pumpkin on head</td>
+                  <td>Force player to wear Carved Pumpkin</td>
                 </tr>
                 <tr>
                   <th scope="row">1500</th>
                   <td>Elytra</td>
-                  <td>Give an Elytra and some firework rockets</td>
+                  <td>Give an Elytra and some Firework Rockets</td>
                 </tr>
                 <tr>
                   <th scope="row">2000</th>
@@ -366,32 +326,32 @@
                 <tr>
                   <th scope="row">2000</th>
                   <td>NotchApple</td>
-                  <td>Give a Notch apple (Enchanted Golden Apple)</td>
+                  <td>Give an Enchanted Golden Apple</td>
                 </tr>
                 <tr>
                   <th scope="row">3000</th>
                   <td>DiamondKit</td>
-                  <td>Give Diamond armor and a Sword Kit</td>
+                  <td>Give Diamond armor and a Sword</td>
                 </tr>
                 <tr>
                   <th scope="row">3500</th>
                   <td>CursedKit</td>
-                  <td>Give a Cursed kit</td>
+                  <td>Give the player a Cursed armor kit</td>
                 </tr>
                 <tr>
                   <th scope="row">7000</th>
                   <td>BeaconKit</td>
-                  <td>Give a Beacon and 64 Iron blocks</td>
+                  <td>Give a Beacon + 64 Copper Blocks</td>
                 </tr>
                 <tr>
                   <th scope="row">7500</th>
                   <td>GodKit</td>
-                  <td>Give a God kit (protection 5, sharpness 5 armor & sword)</td>
+                  <td>Give a god kit (Prot 5, Sharp 5, armor and sword)</td>
                 </tr>
                 <tr>
                   <th scope="row">10000</th>
                   <td>Immortal</td>
-                  <td>Give a Netherrite armor (same enchants as GodKit) + God bow</td>
+                  <td>Give Netherrite armor (same enchants as god) + God bow</td>
                 </tr>
               </tbody>
             </table>
@@ -401,7 +361,7 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Summoning entities
+            Entity Spawning
           </button>
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#eventAccordion">
@@ -418,17 +378,12 @@
                 <tr>
                   <th scope="row">100</th>
                   <td>FakeLITTnt</td>
-                  <td>Summon a Fake Lit TNT</td>
-                </tr>
-                <tr>
-                  <th scope="row">100</th>
-                  <td>GIANT</td>
-                  <td>Spawn a harmless Giant</td>
+                  <td>Spawn a Fake Lit TNT</td>
                 </tr>
                 <tr>
                   <th scope="row">100</th>
                   <td>SpawnSpider</td>
-                  <td>Spawn a regular Spider</td>
+                  <td>Spawn a Spider</td>
                 </tr>
                 <tr>
                   <th scope="row">100</th>
@@ -466,16 +421,6 @@
                   <td>Spawn an Enderman</td>
                 </tr>
                 <tr>
-                  <th scope="row">350</th>
-                  <td>SpawnGhast</td>
-                  <td>Spawn a Ghast</td>
-                </tr>
-                <tr>
-                  <th scope="row">350</th>
-                  <td>SpawnShulker</td>
-                  <td>Spawn a Shulker</td>
-                </tr>
-                <tr>
                   <th scope="row">400</th>
                   <td>DragonFireball</td>
                   <td>Spawn a Dragon Fireball</td>
@@ -491,9 +436,24 @@
                   <td>Spawn a Creeper</td>
                 </tr>
                 <tr>
-                  <th scope="row">400</th>
-                  <td>SpawnCreeper</td>
-                  <td>Spawn a Creeper</td>
+                  <th scope="row">450</th>
+                  <td>CreeperScare</td>
+                  <td>Spawn a Creeper behind the player</td>
+                </tr>
+                <tr>
+                  <th scope="row">500</th>
+                  <td>SpawnGhast</td>
+                  <td>Spawn a Ghast</td>
+                </tr>
+                <tr>
+                  <th scope="row">500</th>
+                  <td>SpawnShulker</td>
+                  <td>Spawn a Shulker</td>
+                </tr>
+                <tr>
+                  <th scope="row">500</th>
+                  <td>GIANT</td>
+                  <td>Spawn a hostile Giant</td>
                 </tr>
                 <tr>
                   <th scope="row">500</th>
@@ -506,24 +466,14 @@
                   <td>Spawn an angry Iron Golem</td>
                 </tr>
                 <tr>
-                  <th scope="row">500</th>
-                  <td>SpawnGolem</td>
-                  <td>Spawn an angry Iron Golem</td>
-                </tr>
-                <tr>
-                  <th scope="row">600</th>
-                  <td>CreeperScare</td>
-                  <td>Creeper spawn behind the player</td>
-                </tr>
-                <tr>
                   <th scope="row">600</th>
                   <td>Rats</td>
-                  <td>10 silverfish</td>
+                  <td>Spawn 10 Silverfish</td>
                 </tr>
                 <tr>
                   <th scope="row">700</th>
-                  <td>CreeperScare</td>
-                  <td>10 bees</td>
+                  <td>Bees</td>
+                  <td>Spawn 10 angry Bees</td>
                 </tr>
                 <tr>
                   <th scope="row">750</th>
@@ -532,68 +482,53 @@
                 </tr>
                 <tr>
                   <th scope="row">1000</th>
+                  <td>Herobrine</td>
+                  <td>Spawn Herobrine into the world</td>
+                </tr>
+                <tr>
+                  <th scope="row">1000</th>
                   <td>PigHell</td>
-                  <td>Circle of pigs with 2 totems and each get struck by lightning</td>
-                </tr>
-                <tr>
-                  <th scope="row">1000</th>
-                  <td>Thor</td>
-                  <td>You feel like thor and threw lightning...</td>
-                </tr>
-                <tr>
-                  <th scope="row">1000</th>
-                  <td>SecretCreeper</td>
-                  <td>Invisible Creeper</td>
+                  <td>Spawn a circle of pigs around the player that get struck by lightning</td>
                 </tr>
                 <tr>
                   <th scope="row">1200</th>
                   <td>VEX</td>
-                  <td>OP VEX Creeper</td>
+                  <td>Spawn an OP Vex (Vex holding a Netherite Sword)</td>
                 </tr>
                 <tr>
                   <th scope="row">1500</th>
                   <td>Meg</td>
-                  <td>Circle of witches named meg + laughing witch sounds for 10s + Text "MEEEeeeeEeEEEG"</td>
+                  <td>Spawn a circle of witches named meg + laughing witch sounds for 10s + Text "MEEEeeeeEeEEEG"</td>
                 </tr>
                 <tr>
                   <th scope="row">1500</th>
                   <td>AquamanAttacks</td>
-                  <td>5 drowned spawn with tridents</td>
-                </tr>
-                <tr>
-                  <th scope="row">1500</th>
-                  <td>Awoo</td>
-                  <td>Angry dogs, jumpscare and night</td>
+                  <td>Spawn 5 trident holding Drowneds</td>
                 </tr>
                 <tr>
                   <th scope="row">1500</th>
                   <td>PiggyRocket</td>
-                  <td>Pig goes boom</td>
+                  <td>Spawn a Pig that explodes into rockets</td>
                 </tr>
                 <tr>
                   <th scope="row">2000</th>
                   <td>ThorCreeper</td>
-                  <td>You feel like thor and threw a lightning at 10x creepers...</td>
+                  <td>You feel like thor threw lightning at 10x creepers...</td>
+                </tr>
+                <tr>
+                  <th scope="row">2000</th>
+                  <td>Slimey</td>
+                  <td>Spawn a giant Slime</td>
                 </tr>
                 <tr>
                   <th scope="row">3000</th>
                   <td>ThiccBacon</td>
-                  <td>Massive angry pig circle + hellish sounds + Text "THICC BACON"</td>
-                </tr>
-                <tr>
-                  <th scope="row">3500</th>
-                  <td>Slimey</td>
-                  <td>Spawn giant slime</td>
+                  <td>Spawn a massive circle of angry Piglin Brutes</td>
                 </tr>
                 <tr>
                   <th scope="row">3500</th>
                   <td>Nuke</td>
-                  <td>Falling Tnt on player with big explosion (disguised as LitTNT)</td>
-                </tr>
-                <tr>
-                  <th scope="row">5000</th>
-                  <td>Herobrine</td>
-                  <td>Herobrine</td>
+                  <td>Spawn a Lit TNT that has a bigger explosion radius</td>
                 </tr>
                 <tr>
                   <th scope="row">7500</th>
@@ -603,28 +538,27 @@
                 <tr>
                   <th scope="row">15000</th>
                   <td>RavengerJail</td>
-                  <td>Circle of ravengers + Slowness 4(5s) + blindness(2s) + text "You're fucked"</td>
+                  <td>Spawn a circle of angry Ravagers and apply Slowness 4 (5s), Blindness (2s)</td>
                 </tr>
                 <tr>
                   <th scope="row">15000</th>
                   <td>EnderDragon</td>
-                  <td>Spawns the Ender Dragon</td>
+                  <td>Teleport player to world spawn and summon an Ender Dragon</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
       </div>
-    </div>
-    <div class="accordion-item">
+      <div class="accordion-item">
         <h2 class="accordion-header" id="headingFour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-            Sounds
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Environmental
           </button>
         </h2>
         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#eventAccordion">
           <div class="accordion-body">
-              <table class="table">
+            <table class="table">
               <thead>
                 <tr>
                   <th scope="col">Points</th>
@@ -635,37 +569,92 @@
               <tbody>
                 <tr>
                   <th scope="row">100</th>
-                  <td>GhastScare</td>
-                  <td>Ghast sound scare</td>
+                  <td>Tree</td>
+                  <td>Try to generate a random tree where the player is standing</td>
                 </tr>
                 <tr>
-                  <th scope="row">100</th>
-                  <td>Fap</td>
-                  <td>Moisty slime sounds (10s)</td>
+                  <th scope="row">150</th>
+                  <td>WeatherClear</td>
+                  <td>Clear the weather</td>
+                </tr>
+                <tr>
+                  <th scope="row">150</th>
+                  <td>WeatherRain</td>
+                  <td>Make it rain</td>
                 </tr>
                 <tr>
                   <th scope="row">300</th>
-                  <td>FoxScare</td>
-                  <td>Fox screech</td>
+                  <td>TimeShift</td>
+                  <td>Shifts the time to the opposite</td>
                 </tr>
                 <tr>
-                  <th scope="row">500</th>
-                  <td>EndermanScare</td>
-                  <td>Enderman scare</td>
+                  <th scope="row">400</th>
+                  <td>AnvilDrop</td>
+                  <td>Make an anvil be placed above the player</td>
                 </tr>
                 <tr>
-                  <th scope="row">500</th>
-                  <td>JumpScare</td>
-                  <td>Guardian with a lot of random creepy sounds</td>
+                  <th scope="row">600</th>
+                  <td>Bedrock</td>
+                  <td>Spawns bedrock under the player</td>
                 </tr>
                 <tr>
-                  <th scope="row">500</th>
-                  <td>AnnoyingSounds</td>
-                  <td>Play random sounds every 5s for 1 minute</td>
+                  <th scope="row">600</th>
+                  <td>SOLIS</td>
+                  <td>Speed up the day cycle</td>
+                </tr>
+                <tr>
+                  <th scope="row">600</th>
+                  <td>XPRain</td>
+                  <td>Make it rain Experience Bottles</td>
+                </tr>
+                <tr>
+                  <th scope="row">1000</th>
+                  <td>NETHER</td>
+                  <td>Generate a Nether Portal near the player</td>
+                </tr>
+                <tr>
+                  <th scope="row">1000</th>
+                  <td>ImStuck</td>
+                  <td>LITERALLY CAN'T MOVE (Apply Slowness and place cobweb)</td>
+                </tr>
+                <tr>
+                  <th scope="row">1000</th>
+                  <td>RavagerHive</td>
+                  <td>The next beehive broken will spawn a Ravager</td>
+                </tr>
+                <tr>
+                  <th scope="row">1000</th>
+                  <td>Thor</td>
+                  <td>You feel like thor threw lightning... (Smite the player)</td>
+                </tr>
+                <tr>
+                  <th scope="row">1200</th>
+                  <td>Arrows</td>
+                  <td>Make it rain Arrows and apply slowness (20s)</td>
+                </tr>
+                <tr>
+                  <th scope="row">1500</th>
+                  <td>Awoo</td>
+                  <td>Spawn angry dogs, jumpscare and night</td>
+                </tr>
+                <tr>
+                  <th scope="row">2500</th>
+                  <td>Sandy</td>
+                  <td>Make a 3x3x3 of sand be placed above the player</td>
+                </tr>
+                <tr>
+                  <th scope="row">4500</th>
+                  <td>RandomTeleport</td>
+                  <td>Random teleport between currentPosition + 10k and currentPosition - 10k (this is super dangerous)</td>
+                </tr>
+                <tr>
+                  <th scope="row">5000</th>
+                  <td>JumpScareTeleport</td>
+                  <td>Random teleport between currentPosition + 10k and currentPosition - 10k and plays the JumpScare (this is super dangerous)</td>
                 </tr>
               </tbody>
             </table>
-          </div>
+          </div>          
         </div>
       </div>
     </div>

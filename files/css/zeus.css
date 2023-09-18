@@ -27,4 +27,9 @@ body {
 
 .accordion-button {
   font-weight: bold;
+
+  &:not(.collapsed) {
+    background-color: #0a0c0d;
+    color: #dddfe4;
+  }
 }
